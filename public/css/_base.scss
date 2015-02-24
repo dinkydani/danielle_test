@@ -1,10 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300italic);
+@import url("http://fonts.googleapis.com/css?family=Merriweather");
+@import url("http://fonts.googleapis.com/css?family=Merriweather+Sans");
 
 html,
 body,
 ul,
 ol {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -17,9 +18,23 @@ a, a:visited, a:hover, a:active {
   box-sizing: border-box; 
 }
 
-// $dark-yellow: #DEC668;
-$dark-yellow: rgb(255, 226, 109);
-$light-yellow: #FFE991;
-$header-text-color: rgb(84, 78, 88);
+// Header
+$dark-yellow: #fee16c;
+$light-yellow: #fcea96;
+$dark-blue: #1d4c5c;
+$header-text-color: #575145;
+$header-font: 'Merriweather Sans', sans-serif;
+$burger-color: #5c5a66;
 
-$base-font: 'Merriweather', serif;
+// Buttons
+$header-hover-color: #ffea99;
+$button-blue: #5eb9ff;
+$button-red: #ef6258;
+
+// Fonts
+$font-family: 'Merriweather', serif;
+$font-size: 16px;
+$base-font-color: #508192;
+
+// Testimonials
+$testimonial-font-color: #6c8792;
