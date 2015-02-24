@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300italic);
+
+html,
+body,
+ul,
+ol {
+  margin: 0 auto;
+  padding: 0;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box; 
+}
+
+// $dark-yellow: #DEC668;
+$dark-yellow: rgb(255, 226, 109);
+$light-yellow: #FFE991;
+$header-text-color: rgb(84, 78, 88);
+
+$base-font: 'Merriweather', serif;
