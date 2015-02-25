@@ -1,13 +1,54 @@
 @import "base";
 @import "header";
 @import "hero";
+@import "buttons";
 
 html{
   min-width: 320px;
-  font-family: $font-family;
+  font-family: $base-font-family;
 }
 
 .main {
   margin-top: 60px;
 }
 
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+
+  p {
+    line-height: 18px;
+  }
+
+  .img-caption {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 9rem;
+  }
+}
+
+.business-circle-img {
+    width: 8rem;
+    margin: 1rem;
+}
+
+.dark-blue-background {
+  background-color: $dark-blue-background;
+  color: $light-font-color;
+}
+.light-background {
+  background-color: $light-background;
+  color: $dark-font-color;
+}
+.grey-background {
+  background-color: $grey-background;
+  color: $testimonial-font-color;
+}
+
+.business-description {
+  text-align: center;
+}
+
+.pricing-illustration {
+}

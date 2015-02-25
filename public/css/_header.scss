@@ -5,8 +5,8 @@
   right: 0;
   width: 100%;
   height: 60px;
-  background-color: $dark-yellow;
-  color: $header-text-color;
+  background-color: $dark-yellow-background;
+  color: $header-font-color;
   font-family: $header-font;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -34,7 +34,7 @@
     position: absolute;
     right: 0;
     top: 6px;
-    width: 3rem;
+    width: 2.7rem;
     padding: 8px;
     margin: 0 1rem;
     cursor: pointer;

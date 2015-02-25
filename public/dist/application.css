@@ -14,6 +14,15 @@ a, a:visited, a:hover, a:active {
 *, *:after, *:before {
   box-sizing: border-box; }
 
+h1 {
+  font-size: 1.2rem; }
+
+h2 {
+  font-size: 1rem; }
+
+p {
+  font-size: 0.7rem; }
+
 .header {
   position: absolute;
   top: 0;
@@ -43,7 +52,7 @@ a, a:visited, a:hover, a:active {
     position: absolute;
     right: 0;
     top: 6px;
-    width: 3rem;
+    width: 2.7rem;
     padding: 8px;
     margin: 0 1rem;
     cursor: pointer; }
@@ -64,7 +73,7 @@ a, a:visited, a:hover, a:active {
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    padding: 1.8rem; }
+    padding: 0 1.5rem; }
   .hero .hero-illustration {
     background: url("../images/landing_images/header_illustration.png");
     background-repeat: no-repeat;
@@ -77,11 +86,57 @@ a, a:visited, a:hover, a:active {
     right: 0;
     left: 0; }
 
+.btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: white;
+  border-radius: 3px;
+  padding: 7px 0;
+  display: inline-block;
+  width: 165px;
+  margin-top: 20px;
+  letter-spacing: 1px; }
+  .btn.btn-red {
+    background: #ef6258; }
+  .btn.btn-blue {
+    background: #5fb9ff; }
+
 html {
   min-width: 320px;
   font-family: "Merriweather", serif; }
 
 .main {
   margin-top: 60px; }
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 3rem 1.5rem; }
+  .wrap p {
+    line-height: 18px; }
+  .wrap .img-caption {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 9rem; }
+
+.business-circle-img {
+  width: 8rem;
+  margin: 1rem; }
+
+.dark-blue-background {
+  background-color: #1d4c5c;
+  color: white; }
+
+.light-background {
+  background-color: white;
+  color: #508192; }
+
+.grey-background {
+  background-color: #eff2f3;
+  color: #6c8792; }
+
+.business-description {
+  text-align: center; }
 
 /*# sourceMappingURL=application.css.map */

@@ -1,0 +1,25 @@
+$red-button: #ef6258;
+$red-button-hover: darken($red-button, 5%);
+
+$blue-button: #5fb9ff;
+$blue-button-hover: darken($blue-button, 5%);
+
+.btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: white;
+  border-radius: 3px;
+  padding: 7px 0;
+  display: inline-block;
+  width: 165px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+
+  &.btn-red {
+    background: $button-red;
+  }
+  &.btn-blue {
+    background: $button-blue;
+  }
+}

@@ -1,16 +1,16 @@
 .hero {
-  background: linear-gradient($dark-yellow, $light-yellow); 
+  background: linear-gradient($dark-yellow-background, $light-yellow-background); 
   height: calc(100vh - 60px);
 
   .hero-wrap{
     text-align: center;
-    color: white;
+    color: $light-font-color;
     position: absolute;
     top: 25%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    padding: 1.8rem;
+    padding: 0 1.5rem;
   }
 
   .hero-illustration {
@@ -19,7 +19,7 @@
     background-position: bottom center;
     background-size: cover;
 
-    border-bottom: 1.5rem solid $dark-blue;
+    border-bottom: 1.5rem solid $dark-blue-background;
     position: absolute;
     bottom: 0;
     top: calc(50% - 60px);
