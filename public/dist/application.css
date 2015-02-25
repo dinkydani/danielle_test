@@ -53,37 +53,35 @@ a, a:visited, a:hover, a:active {
       margin-top: 4px;
       width: 90%; }
 
+.hero {
+  background: linear-gradient(#fee16c, #fcea96);
+  height: calc(100vh - 60px); }
+  .hero .hero-wrap {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 1.8rem; }
+  .hero .hero-illustration {
+    background: url("../images/landing_images/header_illustration.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    border-bottom: 1.5rem solid #1d4c5c;
+    position: absolute;
+    bottom: 0;
+    top: calc(50% - 60px);
+    right: 0;
+    left: 0; }
+
 html {
   min-width: 320px;
   font-family: "Merriweather", serif; }
 
 .main {
   margin-top: 60px; }
-
-.hero {
-  background: linear-gradient(#fee16c, #fcea96);
-  height: calc(100vh - 60px); }
-
-.hero-illustration {
-  background: url("../images/landing_images/header_illustration.png");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-  border-bottom: 1.5rem solid #1d4c5c;
-  position: absolute;
-  bottom: 3.4rem;
-  top: calc(50% - 60px);
-  right: 0;
-  left: 0; }
-
-.hero-wrap {
-  text-align: center;
-  color: white;
-  position: absolute;
-  top: 25%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  padding: 1.8rem; }
 
 /*# sourceMappingURL=application.css.map */
