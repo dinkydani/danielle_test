@@ -1,0 +1,29 @@
+.hero {
+  background: linear-gradient($dark-yellow, $light-yellow); 
+  height: calc(100vh - 60px)
+}
+
+.hero-illustration {
+  background: url("../images/landing_images/header_illustration.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
+  border-bottom: 1.5rem solid $dark-blue;
+  position: absolute;
+  bottom: 3.4rem;
+  top: calc(50% - 60px);
+  right: 0;
+  left: 0;
+}
+
+.hero-wrap{
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 1.8rem;
+}
