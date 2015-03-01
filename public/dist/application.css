@@ -86,21 +86,93 @@ p {
     right: 0;
     left: 0; }
 
+.business-circle-img {
+  width: 8rem;
+  margin: 1rem; }
+
+.business-description {
+  text-align: center; }
+
+.pricing-description {
+  position: relative; }
+
+.pricing-illustration {
+  background-image: url("../images/landing_images/pricing_illustration_cropped.png");
+  background-position: center -150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%; }
+
+.testimonials .testimonials-company {
+  color: #61a6bd;
+  font-size: 0.8rem; }
+.testimonials .testimonials-author {
+  float: right;
+  font-weight: bold;
+  letter-spacing: -0.5px; }
+
+.footer {
+  text-align: center; }
+  .footer .footer-wrap {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0.5rem; }
+  .footer .social-list {
+    list-style: none; }
+    .footer .social-list li {
+      display: inline-block; }
+    .footer .social-list a {
+      display: block;
+      border-radius: 50%;
+      padding: 5px 4px;
+      margin: 0;
+      background: white;
+      height: 26px;
+      width: 26px; }
+    .footer .social-list i {
+      color: #1d4c5c; }
+  .footer .left {
+    float: left;
+    width: 37%;
+    padding: 4px 0; }
+  .footer .middle {
+    display: inline-block;
+    position: relative; }
+    .footer .middle img {
+      height: 54px; }
+  .footer .right {
+    float: right;
+    width: 37%; }
+  .footer .footer-bottom {
+    padding: 10px 0; }
+
 .btn {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 0.7rem;
   color: white;
   border-radius: 3px;
-  padding: 7px 0;
-  display: inline-block;
-  width: 165px;
-  margin-top: 20px;
-  letter-spacing: 1px; }
+  width: 180px;
+  margin-top: 30px;
+  letter-spacing: 1.5px;
+  text-align: center; }
+  .btn a {
+    display: inline-block;
+    padding: 9px; }
   .btn.btn-red {
-    background: #ef6258; }
+    background: #ef6258;
+    transition: background 0.5s ease; }
   .btn.btn-blue {
-    background: #5fb9ff; }
+    background: #5fb9ff;
+    transition: background 0.5s ease; }
+  .btn.btn-red:hover, .btn.btn-red:focus, .btn.btn-red:active {
+    cursor: pointer;
+    background: #ed4c41; }
+  .btn.btn-blue:hover, .btn.btn-blue:focus, .btn.btn-blue:active {
+    cursor: pointer;
+    background: #45aeff; }
 
 html {
   min-width: 320px;
@@ -114,15 +186,16 @@ html {
   margin: 0 auto;
   padding: 3rem 1.5rem; }
   .wrap p {
-    line-height: 18px; }
+    line-height: 20px; }
   .wrap .img-caption {
     margin: 0 auto;
     padding-bottom: 1rem;
     width: 9rem; }
 
-.business-circle-img {
-  width: 8rem;
-  margin: 1rem; }
+.wrap:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .dark-blue-background {
   background-color: #1d4c5c;
@@ -135,8 +208,5 @@ html {
 .grey-background {
   background-color: #eff2f3;
   color: #6c8792; }
-
-.business-description {
-  text-align: center; }
 
 /*# sourceMappingURL=application.css.map */

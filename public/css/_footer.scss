@@ -1,0 +1,50 @@
+.footer {
+  text-align: center;
+
+  .footer-wrap {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0.5rem;
+  }
+
+  .social-list {
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      border-radius: 50%;
+      padding: 5px 4px;
+      margin: 0;
+      background: white;
+      height: 26px;
+      width: 26px;
+    }
+    i {
+      color: $dark-blue-background;
+    }
+  }
+
+  .left {
+    float: left;
+    width: 37%;
+    padding: 4px 0;
+  }
+  .middle {
+    display: inline-block;
+    position: relative;
+    img {
+      height: 54px;
+    }
+  }
+  .right{
+    float: right;
+    width: 37%;
+  }
+
+  .footer-bottom {
+    padding: 10px 0;
+  }
+
+}

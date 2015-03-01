@@ -10,16 +10,34 @@ $blue-button-hover: darken($blue-button, 5%);
   font-size: 0.7rem;
   color: white;
   border-radius: 3px;
-  padding: 7px 0;
-  display: inline-block;
-  width: 165px;
-  margin-top: 20px;
-  letter-spacing: 1px;
+  width: 180px;
+  margin-top: 30px;
+  letter-spacing: 1.5px;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: 9px;
+  }
 
   &.btn-red {
     background: $button-red;
+    transition: background 0.5s ease;
   }
   &.btn-blue {
     background: $button-blue;
+    transition: background 0.5s ease;
+  }
+  &.btn-red:hover,
+  &.btn-red:focus,
+  &.btn-red:active {
+    cursor: pointer;
+    background: $button-red-hover;
+  }
+  &.btn-blue:hover,
+  &.btn-blue:focus,
+  &.btn-blue:active {
+    cursor: pointer;
+    background: $button-blue-hover;
   }
 }

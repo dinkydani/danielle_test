@@ -1,6 +1,12 @@
 @import "base";
+
 @import "header";
 @import "hero";
+@import "business";
+@import "pricing";
+@import "testimonials";
+@import "footer";
+
 @import "buttons";
 
 html{
@@ -18,7 +24,7 @@ html{
   padding: 3rem 1.5rem;
 
   p {
-    line-height: 18px;
+    line-height: 20px;
   }
 
   .img-caption {
@@ -27,10 +33,10 @@ html{
     width: 9rem;
   }
 }
-
-.business-circle-img {
-    width: 8rem;
-    margin: 1rem;
+.wrap:after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .dark-blue-background {
@@ -43,12 +49,5 @@ html{
 }
 .grey-background {
   background-color: $grey-background;
-  color: $testimonial-font-color;
-}
-
-.business-description {
-  text-align: center;
-}
-
-.pricing-illustration {
+  color: $testimonials-font-color;
 }
