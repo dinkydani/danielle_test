@@ -1,0 +1,85 @@
+@import url("http://fonts.googleapis.com/css?family=Merriweather");
+@import url("http://fonts.googleapis.com/css?family=Merriweather+Sans");
+
+// Header
+$dark-yellow-background: #fee16c;
+$light-yellow-background: #fcea96;
+$dark-blue-background: #1d4c5c;
+$grey-background: #eff2f3;
+$light-background: white;
+
+// Header
+$header-font-color: #575145;
+$header-font: 'Merriweather Sans', sans-serif;
+$header-hover-color: #ffea99;
+$burger-color: #5c5a66;
+
+// Buttons
+$button-red: #ef6258;
+$button-red-hover: darken($button-red, 5%);
+$button-blue: #5fb9ff;
+$button-blue-hover: darken($button-blue, 5%);
+
+// Fonts
+$base-font-family: 'Merriweather', serif;
+$font-size: 16px;
+$dark-font-color: #508192;
+$light-font-color: white;
+$testimonials-font-color: #6c8792;
+
+
+
+html{
+  min-width: 320px;
+  font-family: $base-font-family;
+}
+h1 {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 1rem;
+}
+p {
+  font-size: 0.7rem;
+}
+
+
+.main {
+  margin-top: 60px;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  p {
+    line-height: 20px;
+  }
+
+  .img-caption {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 9rem;
+  }
+}
+
+.dark-blue-background {
+  background-color: $dark-blue-background;
+  color: $light-font-color;
+}
+.light-background {
+  background-color: $light-background;
+  color: $dark-font-color;
+}
+.grey-background {
+  background-color: $grey-background;
+  color: $testimonials-font-color;
+}
+

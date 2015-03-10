@@ -1,0 +1,107 @@
+.header.expanded {
+  height: 250px;
+  
+}
+
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background-color: $dark-yellow-background;
+  color: $header-font-color;
+  font-family: $header-font;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 10;
+  transition: all 0.5s ease;
+
+  .logo {
+    float: left;
+    padding: 10px 0;
+    margin: 0 1.5rem;
+  }
+
+  .header-links {
+    padding-top: 60px;
+    list-style: none;
+
+    .header-links-item {
+      width: 70%;
+      margin: auto;
+
+      a {
+        display: block;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        text-align: center;
+        border-bottom: 3px transparent solid;
+        transition: all 0.4s ease;
+
+        &:hover {
+          border-bottom: 3px white solid;
+        }
+      }
+
+    }
+  }
+
+  .burger {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 2.7rem;
+    padding: 8px;
+    margin: 0 1rem;
+    cursor: pointer;
+
+    div {
+      background-color: $burger-color;
+      height: 5px;
+      margin-top: 4px;
+      width: 90%;
+      transition: all 0.5s ease;
+    }
+  }
+
+}
+
+.header.expanded .burger div:first-child {
+  transform: translateY(10px)rotate(45deg);
+}
+.header.expanded .middle {
+  opacity: 0;
+}
+.header.expanded .burger div:last-child {
+  transform: translateY(-8px)rotate(-45deg);
+}
+
+// @media only screen and (min-width: 768px) {
+//   .header{
+
+//     .header-links {
+//       float: right;
+//       margin: 0 1.5rem;
+//     }
+
+//     .header-links {
+//       li {
+//         display: inline-block;
+//       }
+//       a {
+//         display: block;
+//         padding: 11px 12px;
+//         margin-top: 20px;
+//         border-radius: 4px;
+//         transition: background-color 0.5s ease;
+//       }
+//       a:hover {
+//         background-color: $light-yellow;
+//       }
+//     }
+//   }  
+// }

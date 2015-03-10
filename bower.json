@@ -1,0 +1,7 @@
+{
+  "name": "training-labs-webdevworkflow",
+  "dependencies": {
+    "underscore": "~1.8.2",
+    "jquery": "1.11"
+  }
+}
