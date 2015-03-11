@@ -1,12 +1,19 @@
 @import url("http://fonts.googleapis.com/css?family=Merriweather");
 @import url("http://fonts.googleapis.com/css?family=Merriweather+Sans");
 
-// Header
+// 
+// Sections
+// 
 $dark-yellow-background: #fee16c;
 $light-yellow-background: #fcea96;
 $dark-blue-background: #1d4c5c;
-$grey-background: #eff2f3;
 $light-background: white;
+
+// Testimonials
+$grey-background: #e5eaec;
+$light-grey-background: #eff2f3;
+$testimonials-bullet-active: #ffad00;
+$testimonials-bullet-inactive: #d4dde0;
 
 // Header
 $header-font-color: #575145;
@@ -80,6 +87,10 @@ p {
 }
 .grey-background {
   background-color: $grey-background;
+  color: $testimonials-font-color;
+}
+.light-grey-background {
+  background-color: $light-grey-background;
   color: $testimonials-font-color;
 }
 

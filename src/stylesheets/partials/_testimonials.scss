@@ -1,4 +1,8 @@
 .testimonials {
+  
+  .testimonials-content {
+    
+  }
 
   .testimonials-company {
     color: #61a6bd;
@@ -9,5 +13,38 @@
     float: right;
     font-weight: bold;
     letter-spacing: -0.5px;
+  }
+
+  .testimonials-image {
+    width: 100%;
+    box-shadow: 1px 1px 10px;
+    margin-top: 1rem;
+    border-radius: 6px;  
+  }
+
+  .testimonials-balls {
+    height: 90px;
+    border-top: 2px #d4dde0 solid;
+    text-align: center;
+    ul {
+      margin-top: 1rem;
+    }
+    li {
+      display: inline-block;
+      padding: 0.4rem;
+    }
+
+    .testimonials-ball {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      
+      &.active {
+        background-color: $testimonials-bullet-active;
+      }
+      &.inactive {
+        background-color: $testimonials-bullet-inactive;
+      }
+    }
   }
 }
