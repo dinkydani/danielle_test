@@ -2,13 +2,14 @@
   position: relative;
 }
 
-.pricing-illustration {
+.pricing-description {
   background-image: url("../assets/landing_images/pricing_illustration_cropped.png");
-  background-position: center -150px;
+  background-position: center -170px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
+}
 
-  height: 100%;
-  width: 100%;
+.pricing-content {
+  margin-top: 16rem;
 }
