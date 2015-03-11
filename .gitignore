@@ -1,3 +1,5 @@
-.sass-cache
-resources
 .DS_Store
+.sass-cache
+resources/
+vendor/
+dist/
