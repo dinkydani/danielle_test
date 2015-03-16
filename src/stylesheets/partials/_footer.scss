@@ -5,6 +5,10 @@
     position: relative;
     margin: 0 auto;
     padding: 2rem 0.5rem;
+
+    @media screen and (min-width: $screen-tablet) {
+      width: 70%;
+    }
   }
 
   .social-links {

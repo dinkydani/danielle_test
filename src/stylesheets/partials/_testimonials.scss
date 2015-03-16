@@ -1,7 +1,9 @@
 .testimonials {
   
-  .testimonials-content {
-    
+  .testimonials-content:after{
+    content: "";
+    display: table;
+    clear: both;
   }
 
   .testimonials-company {
@@ -15,11 +17,23 @@
     letter-spacing: -0.5px;
   }
 
-  .testimonials-image {
-    width: 100%;
-    box-shadow: 1px 1px 10px;
-    margin-top: 1rem;
-    border-radius: 6px;  
+  .testimonials-images {
+    position: relative;
+    margin: auto;
+    padding: 0 1rem;
+    width: 320px;
+    overflow: hidden;
+
+    .img-desktop {
+      position: relative;
+      width: 85%;
+    }
+    .img-mobile {
+      position: absolute;
+      right: -26px;
+      bottom: 0;
+      width: 60%;
+    }
   }
 
   .testimonials-balls {

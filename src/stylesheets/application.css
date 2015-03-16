@@ -11,7 +11,8 @@ h2 {
   font-size: 1rem; }
 
 p {
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  line-height: 20px; }
 
 .main {
   margin-top: 60px; }
@@ -24,12 +25,23 @@ p {
     content: "";
     display: table;
     clear: both; }
-  .wrap p {
-    line-height: 20px; }
-  .wrap .img-caption {
-    margin: 0 auto;
-    padding-bottom: 1rem;
-    width: 9rem; }
+  @media screen and (min-width: 768px) {
+    .wrap {
+      width: 70%; } }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
 
 .dark-blue-background {
   background-color: #1d4c5c;
@@ -46,20 +58,6 @@ p {
 .light-grey-background {
   background-color: #eff2f3;
   color: #6c8792; }
-
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0; }
-
-a, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: inherit; }
-
-*, *:after, *:before {
-  box-sizing: border-box; }
 
 .btn {
   cursor: pointer;
@@ -174,26 +172,36 @@ a, a:visited, a:hover, a:active {
     right: 0;
     left: 0; }
 
-.business-circle-img {
-  width: 8rem;
-  margin: 1rem; }
-
 .business-description {
   text-align: center; }
+  .business-description .business-balls {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 2rem; }
+  .business-description .business-ball {
+    display: inline-block;
+    margin: 1rem 1.5rem; }
+  .business-description .business-ball-img {
+    width: 8rem; }
+  .business-description .business-ball-caption {
+    width: 10rem; }
 
 .pricing-description {
   position: relative; }
 
 .pricing-description {
   background-image: url("../assets/landing_images/pricing_illustration_cropped.png");
-  background-position: center -170px;
-  background-size: cover;
+  background-position: center -120px;
   background-repeat: no-repeat;
-  margin: 0 auto; }
+  background-size: 700px; }
 
 .pricing-content {
-  margin-top: 16rem; }
+  padding-top: 270px; }
 
+.testimonials .testimonials-content:after {
+  content: "";
+  display: table;
+  clear: both; }
 .testimonials .testimonials-company {
   color: #61a6bd;
   font-size: 0.8rem; }
@@ -201,11 +209,20 @@ a, a:visited, a:hover, a:active {
   float: right;
   font-weight: bold;
   letter-spacing: -0.5px; }
-.testimonials .testimonials-image {
-  width: 100%;
-  box-shadow: 1px 1px 10px;
-  margin-top: 1rem;
-  border-radius: 6px; }
+.testimonials .testimonials-images {
+  position: relative;
+  margin: auto;
+  padding: 0 1rem;
+  width: 320px;
+  overflow: hidden; }
+  .testimonials .testimonials-images .img-desktop {
+    position: relative;
+    width: 85%; }
+  .testimonials .testimonials-images .img-mobile {
+    position: absolute;
+    right: -26px;
+    bottom: 0;
+    width: 60%; }
 .testimonials .testimonials-balls {
   height: 90px;
   border-top: 2px #d4dde0 solid;
@@ -230,6 +247,9 @@ a, a:visited, a:hover, a:active {
     position: relative;
     margin: 0 auto;
     padding: 2rem 0.5rem; }
+    @media screen and (min-width: 768px) {
+      .footer .footer-wrap {
+        width: 70%; } }
   .footer .social-links {
     list-style: none; }
     .footer .social-links .social-links-item {

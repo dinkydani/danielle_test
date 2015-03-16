@@ -34,6 +34,11 @@ $dark-font-color: #508192;
 $light-font-color: white;
 $testimonials-font-color: #6c8792;
 
+// Media Queries
+$screen-phone: 320px;
+$screen-tablet: 768px;
+$screen-desktop: 992px;
+$screen-desktop-lg: 1200px;
 
 
 html{
@@ -48,6 +53,7 @@ h2 {
 }
 p {
   font-size: 0.7rem;
+  line-height: 20px;
 }
 
 
@@ -66,31 +72,7 @@ p {
     clear: both;
   }
 
-  p {
-    line-height: 20px;
-  }
-
-  .img-caption {
-    margin: 0 auto;
-    padding-bottom: 1rem;
-    width: 9rem;
+  @media screen and (min-width: $screen-tablet) {
+    width: 70%;
   }
 }
-
-.dark-blue-background {
-  background-color: $dark-blue-background;
-  color: $light-font-color;
-}
-.light-background {
-  background-color: $light-background;
-  color: $dark-font-color;
-}
-.grey-background {
-  background-color: $grey-background;
-  color: $testimonials-font-color;
-}
-.light-grey-background {
-  background-color: $light-grey-background;
-  color: $testimonials-font-color;
-}
-

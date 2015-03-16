@@ -1,7 +1,25 @@
-.business-circle-img {
-    width: 8rem;
-    margin: 1rem;
-}
 .business-description {
   text-align: center;
+
+  .business-balls {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .business-ball {
+    display: inline-block;
+    margin: 1rem 1.5rem;
+
+    @media screen and (min-width: $screen-tablet) {
+      
+    }
+  }
+  .business-ball-img {
+    width: 8rem;
+  }
+  .business-ball-caption {
+    width: 10rem;
+  }
+
 }
