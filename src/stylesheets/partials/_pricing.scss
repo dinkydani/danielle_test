@@ -7,8 +7,17 @@
   background-position: center -120px;
   background-repeat: no-repeat;
   background-size: 700px;
+
+  @media screen and (min-width: $screen-tablet) {
+    background-position: -100px center;
+  }
 }
 
 .pricing-content {
   padding-top: 270px;
+
+  @media screen and (min-width: $screen-tablet) {
+    padding-top: 0;
+    padding-left: 280px;
+  }
 }
