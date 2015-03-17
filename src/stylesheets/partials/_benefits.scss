@@ -1,0 +1,21 @@
+.benefits-description {
+  position: relative;
+
+  background-image: url("../assets/landing_images/benefits_illustration.png");
+  background-position: center 25px;
+  background-repeat: no-repeat;
+  background-size: 450px;
+
+  @media screen and (min-width: $screen-tablet) {
+    background-position: right center;
+  }
+}
+
+.benefits-content {
+  padding-top: 280px;
+
+  @media screen and (min-width: $screen-tablet) {
+    padding-top: 0;
+    padding-right: 280px;
+  }
+}

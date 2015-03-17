@@ -5,17 +5,20 @@ html {
   font-family: "Merriweather", serif; }
 
 h1 {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  padding: 0 1.5rem; }
 
 h2 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  padding: 0 1.5rem; }
 
 p {
   font-size: 0.7rem;
-  line-height: 20px; }
+  line-height: 20px;
+  padding: 0 1.5rem; }
 
 section {
-  padding: 3rem 1.5rem; }
+  padding: 3rem 0; }
 
 .main {
   margin-top: 60px; }
@@ -28,6 +31,9 @@ section {
     display: table;
     clear: both; }
   @media screen and (min-width: 768px) {
+    .wrap {
+      width: 80%; } }
+  @media screen and (min-width: 992px) {
     .wrap {
       width: 70%; } }
 
@@ -69,7 +75,7 @@ a, a:visited, a:hover, a:active {
   border-radius: 3px;
   display: inline-block;
   width: 180px;
-  margin-top: 30px;
+  margin: 2rem 1.5rem 0;
   letter-spacing: 1.5px;
   text-align: center; }
   .btn a {
@@ -189,16 +195,14 @@ a, a:visited, a:hover, a:active {
     width: 10rem; }
 
 .pricing-description {
-  position: relative; }
-
-.pricing-description {
-  background-image: url("../assets/landing_images/pricing_illustration_cropped.png");
+  position: relative;
+  background-image: url("../assets/landing_images/pricing_illustration.png");
   background-position: center -120px;
   background-repeat: no-repeat;
   background-size: 700px; }
   @media screen and (min-width: 768px) {
     .pricing-description {
-      background-position: -100px center; } }
+      background-position: -135px center; } }
 
 .pricing-content {
   padding-top: 270px; }
@@ -207,47 +211,83 @@ a, a:visited, a:hover, a:active {
       padding-top: 0;
       padding-left: 280px; } }
 
-.testimonials .testimonials-content:after {
-  content: "";
-  display: table;
-  clear: both; }
-.testimonials .testimonials-company {
-  color: #61a6bd;
-  font-size: 0.8rem; }
-.testimonials .testimonials-author {
-  float: right;
-  font-weight: bold;
-  letter-spacing: -0.5px; }
-.testimonials .testimonials-images {
+.benefits-description {
   position: relative;
-  margin: auto;
-  padding: 0 1rem;
-  width: 320px;
-  overflow: hidden; }
-  .testimonials .testimonials-images .img-desktop {
+  background-image: url("../assets/landing_images/benefits_illustration.png");
+  background-position: center 25px;
+  background-repeat: no-repeat;
+  background-size: 450px; }
+  @media screen and (min-width: 768px) {
+    .benefits-description {
+      background-position: right center; } }
+
+.benefits-content {
+  padding-top: 280px; }
+  @media screen and (min-width: 768px) {
+    .benefits-content {
+      padding-top: 0;
+      padding-right: 280px; } }
+
+.testimonials {
+  padding-bottom: 0; }
+  .testimonials .testimonials-company {
+    color: #61a6bd;
+    font-size: 0.8rem; }
+  .testimonials .testimonials-author {
+    text-align: right;
+    font-weight: bold; }
+  .testimonials .testimonials-content {
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .testimonials .testimonials-content {
+        float: left;
+        width: 50%;
+        padding-right: 2rem; } }
+  .testimonials .testimonials-quotation-img {
+    visibility: hidden; }
+    @media screen and (min-width: 768px) {
+      .testimonials .testimonials-quotation-img {
+        visibility: visible;
+        position: absolute;
+        top: 48px;
+        left: -50px;
+        width: 60px; } }
+  .testimonials .testimonials-images {
     position: relative;
-    width: 85%; }
-  .testimonials .testimonials-images .img-mobile {
-    position: absolute;
-    right: -26px;
-    bottom: 0;
-    width: 60%; }
-.testimonials .testimonials-balls {
+    margin: auto;
+    padding: 0 1rem;
+    width: 320px;
+    overflow: hidden; }
+    .testimonials .testimonials-images .img-desktop {
+      position: relative;
+      width: 85%; }
+    .testimonials .testimonials-images .img-mobile {
+      position: absolute;
+      right: -26px;
+      bottom: 0;
+      width: 60%; }
+    @media screen and (min-width: 768px) {
+      .testimonials .testimonials-images {
+        float: right;
+        width: 50%;
+        padding: 0; } }
+
+.testimonials-balls {
   height: 90px;
   border-top: 2px #d4dde0 solid;
   text-align: center; }
-  .testimonials .testimonials-balls ul {
+  .testimonials-balls ul {
     margin-top: 1rem; }
-  .testimonials .testimonials-balls li {
+  .testimonials-balls li {
     display: inline-block;
     padding: 0.4rem; }
-  .testimonials .testimonials-balls .testimonials-ball {
+  .testimonials-balls .testimonials-ball {
     width: 15px;
     height: 15px;
     border-radius: 50%; }
-    .testimonials .testimonials-balls .testimonials-ball.active {
+    .testimonials-balls .testimonials-ball.active {
       background-color: #ffad00; }
-    .testimonials .testimonials-balls .testimonials-ball.inactive {
+    .testimonials-balls .testimonials-ball.inactive {
       background-color: #d4dde0; }
 
 .footer {

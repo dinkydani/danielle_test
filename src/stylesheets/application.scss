@@ -1,12 +1,16 @@
-@import "partials/base"; // Global CSS
+// Global CSS
+@import "partials/base";
 @import "partials/reset";
 
+// Modules
 @import "partials/colors";
 @import "partials/buttons";
 
+// Page sections
 @import "partials/header";
 @import "partials/hero";
 @import "partials/business";
 @import "partials/pricing";
+@import "partials/benefits";
 @import "partials/testimonials";
 @import "partials/footer";

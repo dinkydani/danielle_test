@@ -1,10 +1,6 @@
 .testimonials {
-  
-  .testimonials-content:after{
-    content: "";
-    display: table;
-    clear: both;
-  }
+
+  padding-bottom: 0;
 
   .testimonials-company {
     color: #61a6bd;
@@ -12,9 +8,28 @@
   }
 
   .testimonials-author {
-    float: right;
+    text-align: right;
     font-weight: bold;
-    letter-spacing: -0.5px;
+  }
+
+  .testimonials-content {
+    position: relative;
+    @media screen and (min-width: $screen-tablet) {
+      float: left;
+      width: 50%;
+      padding-right: 2rem;
+    }
+  }
+
+  .testimonials-quotation-img {
+    visibility: hidden;
+    @media screen and (min-width: $screen-tablet) {
+      visibility: visible;
+      position: absolute;
+      top: 48px;
+      left: -50px;
+      width: 60px;
+    }
   }
 
   .testimonials-images {
@@ -34,31 +49,37 @@
       bottom: 0;
       width: 60%;
     }
+
+    @media screen and (min-width: $screen-tablet) {
+      float: right;
+      width: 50%;
+      padding: 0;
+    }
+  }
+}
+
+.testimonials-balls {
+  height: 90px;
+  border-top: 2px #d4dde0 solid;
+  text-align: center;
+  ul {
+    margin-top: 1rem;
+  }
+  li {
+    display: inline-block;
+    padding: 0.4rem;
   }
 
-  .testimonials-balls {
-    height: 90px;
-    border-top: 2px #d4dde0 solid;
-    text-align: center;
-    ul {
-      margin-top: 1rem;
+  .testimonials-ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    
+    &.active {
+      background-color: $testimonials-bullet-active;
     }
-    li {
-      display: inline-block;
-      padding: 0.4rem;
-    }
-
-    .testimonials-ball {
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      
-      &.active {
-        background-color: $testimonials-bullet-active;
-      }
-      &.inactive {
-        background-color: $testimonials-bullet-inactive;
-      }
+    &.inactive {
+      background-color: $testimonials-bullet-inactive;
     }
   }
 }
