@@ -1,16 +1,21 @@
 // Global CSS
+@import "partials/variables";
 @import "partials/base";
 @import "partials/reset";
 
 // Modules
-@import "partials/colors";
 @import "partials/buttons";
 
-// Page sections
+// All page sections
 @import "partials/header";
-@import "partials/hero";
-@import "partials/business";
-@import "partials/pricing";
-@import "partials/benefits";
-@import "partials/testimonials";
 @import "partials/footer";
+
+// Landing page sections
+@import "partials/landing/herolanding";
+@import "partials/landing/business";
+@import "partials/landing/pricing";
+@import "partials/landing/benefits";
+@import "partials/landing/testimonials";
+
+// Pricing page sections
+@import "partials/pricing/heropricing";

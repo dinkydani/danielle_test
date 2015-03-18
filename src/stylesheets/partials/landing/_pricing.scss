@@ -1,6 +1,6 @@
-.pricing-description {
+.landing-pricing-description {
   position: relative;
-  background-image: url("../assets/landing_images/pricing_illustration.png");
+  background-image: url("/src/assets/landing_images/pricing_illustration.png");
   background-position: center -120px;
   background-repeat: no-repeat;
   background-size: 700px;
@@ -10,7 +10,7 @@
   }
 }
 
-.pricing-content {
+.landing-pricing-content {
   padding-top: 270px;
 
   @media screen and (min-width: $screen-tablet) {

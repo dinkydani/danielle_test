@@ -1,47 +1,5 @@
-@import url("http://fonts.googleapis.com/css?family=Merriweather");
-@import url("http://fonts.googleapis.com/css?family=Merriweather+Sans");
-
-// 
-// Sections
-// 
-$dark-yellow-background: #fee16c;
-$light-yellow-background: #fcea96;
-$dark-blue-background: #1d4c5c;
-$light-background: white;
-
-// Testimonials
-$grey-background: #e5eaec;
-$light-grey-background: #eff2f3;
-$testimonials-bullet-active: #ffad00;
-$testimonials-bullet-inactive: #d4dde0;
-
-// Header
-$header-font-color: #575145;
-$header-font: 'Merriweather Sans', sans-serif;
-$header-hover-color: #ffea99;
-$burger-color: #5c5a66;
-
-// Buttons
-$button-red: #ef6258;
-$button-red-hover: darken($button-red, 5%);
-$button-blue: #5fb9ff;
-$button-blue-hover: darken($button-blue, 5%);
-
-// Fonts
-$base-font-family: 'Merriweather', serif;
-$font-size: 16px;
-$dark-font-color: #508192;
-$light-font-color: white;
-$testimonials-font-color: #6c8792;
-
-// Media Queries
-$screen-phone: 320px;
-$screen-tablet: 768px;
-$screen-desktop: 992px;
-$screen-desktop-lg: 1200px;
-
-
 html{
+  font-size: 16px;
   min-width: 320px;
   font-family: $base-font-family;
 }
@@ -75,11 +33,38 @@ section {
     display: table;
     clear: both;
   }
+}
 
-  @media screen and (min-width: $screen-tablet) {
+.dark-blue-background {
+  background-color: $dark-blue-background;
+  color: $light-font-color;
+}
+.light-background {
+  background-color: $light-background;
+  color: $dark-font-color;
+}
+.grey-background {
+  background-color: $grey-background;
+  color: $testimonials-font-color;
+}
+.light-grey-background {
+  background-color: $light-grey-background;
+  color: $testimonials-font-color;
+}
+
+@media screen and (min-width: $screen-tablet) {
+  html {
+    font-size: 16px;
+  }
+  .wrap {
     width: 80%;
   }
-  @media screen and (min-width: $screen-desktop) {
+}
+@media screen and (min-width: $screen-desktop) {
+  html {
+    font-size: 18px;
+  }
+  .wrap {
     width: 70%;
   }
 }

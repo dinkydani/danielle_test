@@ -1,6 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Merriweather");
 @import url("http://fonts.googleapis.com/css?family=Merriweather+Sans");
 html {
+  font-size: 16px;
   min-width: 320px;
   font-family: "Merriweather", serif; }
 
@@ -30,13 +31,35 @@ section {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (min-width: 768px) {
-    .wrap {
-      width: 80%; } }
-  @media screen and (min-width: 992px) {
-    .wrap {
-      width: 70%; } }
 
+.dark-blue-background {
+  background-color: #1d4c5c;
+  color: #fff; }
+
+.light-background {
+  background-color: #fff;
+  color: #508192; }
+
+.grey-background {
+  background-color: #e5eaec;
+  color: #6c8792; }
+
+.light-grey-background {
+  background-color: #eff2f3;
+  color: #6c8792; }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px; }
+
+  .wrap {
+    width: 80%; } }
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px; }
+
+  .wrap {
+    width: 70%; } }
 html,
 body,
 ul,
@@ -50,22 +73,6 @@ a, a:visited, a:hover, a:active {
 
 *, *:after, *:before {
   box-sizing: border-box; }
-
-.dark-blue-background {
-  background-color: #1d4c5c;
-  color: white; }
-
-.light-background {
-  background-color: white;
-  color: #508192; }
-
-.grey-background {
-  background-color: #e5eaec;
-  color: #6c8792; }
-
-.light-grey-background {
-  background-color: #eff2f3;
-  color: #6c8792; }
 
 .btn {
   cursor: pointer;
@@ -156,29 +163,53 @@ a, a:visited, a:hover, a:active {
 .header.expanded .burger div:last-child {
   transform: translateY(-8px) rotate(-45deg); }
 
+.footer {
+  text-align: center; }
+  .footer p {
+    padding: 0; }
+  .footer .footer-top {
+    padding: 2rem 0.5rem; }
+  .footer .social-links {
+    list-style: none; }
+    .footer .social-links .social-links-item {
+      display: inline-block;
+      padding: 2px; }
+    .footer .social-links .social-links-item a {
+      display: block;
+      border-radius: 50%;
+      padding: 5px 4px;
+      margin: 0;
+      background: white;
+      height: 26px;
+      width: 26px; }
+    .footer .social-links i {
+      color: #1d4c5c; }
+  .footer .left {
+    float: left;
+    width: 37%;
+    padding: 4px 0; }
+  .footer .middle {
+    display: inline-block;
+    position: relative; }
+    .footer .middle .footer-logo {
+      height: 54px; }
+  .footer .right {
+    float: right;
+    width: 37%; }
+  .footer .footer-bottom {
+    padding: 1rem 0; }
+
 .hero {
-  background: linear-gradient(#fee16c, #fcea96);
-  height: calc(100vh - 60px); }
-  .hero .hero-wrap {
+  background-image: url("/src/assets/landing_images/header_illustration.png"), linear-gradient(#fee16c, #fcea96);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: calc(100vh - 60px);
+  border-bottom: 1.5rem solid #1d4c5c; }
+  .hero .hero-text {
     text-align: center;
-    color: white;
-    position: absolute;
-    top: 25%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    padding: 0 1.5rem; }
-  .hero .hero-illustration {
-    background: url("../assets/landing_images/header_illustration.png");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-    border-bottom: 1.5rem solid #1d4c5c;
-    position: absolute;
-    bottom: 0;
-    top: calc(50% - 60px);
-    right: 0;
-    left: 0; }
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0 3rem; }
 
 .business-description {
   text-align: center; }
@@ -194,26 +225,26 @@ a, a:visited, a:hover, a:active {
   .business-description .business-ball-caption {
     width: 10rem; }
 
-.pricing-description {
+.landing-pricing-description {
   position: relative;
-  background-image: url("../assets/landing_images/pricing_illustration.png");
+  background-image: url("/src/assets/landing_images/pricing_illustration.png");
   background-position: center -120px;
   background-repeat: no-repeat;
   background-size: 700px; }
   @media screen and (min-width: 768px) {
-    .pricing-description {
+    .landing-pricing-description {
       background-position: -135px center; } }
 
-.pricing-content {
+.landing-pricing-content {
   padding-top: 270px; }
   @media screen and (min-width: 768px) {
-    .pricing-content {
+    .landing-pricing-content {
       padding-top: 0;
       padding-left: 280px; } }
 
 .benefits-description {
   position: relative;
-  background-image: url("../assets/landing_images/benefits_illustration.png");
+  background-image: url("/src/assets/landing_images/benefits_illustration.png");
   background-position: center 25px;
   background-repeat: no-repeat;
   background-size: 450px; }
@@ -289,38 +320,12 @@ a, a:visited, a:hover, a:active {
     .testimonials-balls .testimonials-ball.inactive {
       background-color: #d4dde0; }
 
-.footer {
-  text-align: center; }
-  .footer .footer-top {
-    padding: 2rem 0.5rem; }
-  .footer .social-links {
-    list-style: none; }
-    .footer .social-links .social-links-item {
-      display: inline-block;
-      padding: 2px; }
-    .footer .social-links .social-links-item a {
-      display: block;
-      border-radius: 50%;
-      padding: 5px 4px;
-      margin: 0;
-      background: white;
-      height: 26px;
-      width: 26px; }
-    .footer .social-links i {
-      color: #1d4c5c; }
-  .footer .left {
-    float: left;
-    width: 37%;
-    padding: 4px 0; }
-  .footer .middle {
-    display: inline-block;
-    position: relative; }
-    .footer .middle .footer-logo {
-      height: 54px; }
-  .footer .right {
-    float: right;
-    width: 37%; }
-  .footer .footer-bottom {
-    padding: 1rem 0; }
+.pricing-hero {
+  background: linear-gradient(#fee16c, #fcea96); }
+  .pricing-hero .pricing-hero-text {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 3rem; }
 
 /*# sourceMappingURL=application.css.map */

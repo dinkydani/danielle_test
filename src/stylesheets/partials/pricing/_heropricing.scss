@@ -1,0 +1,10 @@
+.pricing-hero {
+  background: linear-gradient($dark-yellow-background, $light-yellow-background); 
+
+  .pricing-hero-text {
+    text-align: center;
+    color: $light-font-color;
+    font-size: 2rem;
+    padding: 0 3rem;
+  }
+}
