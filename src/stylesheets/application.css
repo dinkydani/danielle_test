@@ -243,10 +243,10 @@ a, a:visited, a:hover, a:active {
         float: left;
         width: 50%; } }
   .testimonials .testimonials-quotation-img {
-    visibility: hidden; }
+    display: none; }
     @media screen and (min-width: 768px) {
       .testimonials .testimonials-quotation-img {
-        visibility: visible;
+        display: inline;
         position: absolute;
         top: 48px;
         left: -50px;

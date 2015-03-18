@@ -21,9 +21,9 @@
   }
 
   .testimonials-quotation-img {
-    visibility: hidden;
+    display: none;
     @media screen and (min-width: $screen-tablet) {
-      visibility: visible;
+      display: inline;
       position: absolute;
       top: 48px;
       left: -50px;
