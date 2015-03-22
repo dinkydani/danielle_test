@@ -28,11 +28,7 @@ section {
   position: relative;
   margin: 0 auto;
 
-  &:after{
-    content: "";
-    display: table;
-    clear: both;
-  }
+  @include clear-floats;
 }
 
 .dark-blue-background {
