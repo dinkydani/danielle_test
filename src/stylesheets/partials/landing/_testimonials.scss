@@ -17,6 +17,7 @@
     @media screen and (min-width: $screen-tablet) {
       float: left;
       width: 50%;
+      padding-right: 1rem;
     }
   }
 
@@ -35,7 +36,7 @@
     position: relative;
     margin: auto;
     padding: 0 1rem;
-    width: 320px;
+    max-width: 400px;
     overflow: hidden;
 
     .img-desktop {

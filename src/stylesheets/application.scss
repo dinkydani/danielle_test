@@ -1,3 +1,6 @@
+// Mixins
+@import "modules/mixins";
+
 // Global CSS
 @import "partials/variables";
 @import "partials/base";
@@ -13,9 +16,11 @@
 // Landing page sections
 @import "partials/landing/herolanding";
 @import "partials/landing/business";
-@import "partials/landing/pricing";
+@import "partials/landing/pricinglanding";
 @import "partials/landing/benefits";
 @import "partials/landing/testimonials";
 
 // Pricing page sections
 @import "partials/pricing/heropricing";
+@import "partials/pricing/pricingdescription";
+@import "partials/pricing/pricingtable";

@@ -147,20 +147,20 @@ a, a:visited, a:hover, a:active {
     padding: 8px;
     margin: 0 1rem;
     cursor: pointer; }
-    .header .burger div {
+    .header .burger .burger-line {
       background-color: #5c5a66;
       height: 5px;
       margin-top: 4px;
       width: 90%;
       transition: all 0.5s ease; }
 
-.header.expanded .burger div:first-child {
+.header.expanded .burger-line:first-child {
   transform: translateY(10px) rotate(45deg); }
 
 .header.expanded .middle {
   opacity: 0; }
 
-.header.expanded .burger div:last-child {
+.header.expanded .burger-line:last-child {
   transform: translateY(-8px) rotate(-45deg); }
 
 .footer {
@@ -186,7 +186,7 @@ a, a:visited, a:hover, a:active {
       color: #1d4c5c; }
   .footer .left {
     float: left;
-    width: 37%;
+    width: 40%;
     padding: 4px 0; }
   .footer .middle {
     display: inline-block;
@@ -195,7 +195,7 @@ a, a:visited, a:hover, a:active {
       height: 54px; }
   .footer .right {
     float: right;
-    width: 37%; }
+    width: 40%; }
   .footer .footer-bottom {
     padding: 1rem 0; }
 
@@ -272,7 +272,8 @@ a, a:visited, a:hover, a:active {
     @media screen and (min-width: 768px) {
       .testimonials .testimonials-content {
         float: left;
-        width: 50%; } }
+        width: 50%;
+        padding-right: 1rem; } }
   .testimonials .testimonials-quotation-img {
     display: none; }
     @media screen and (min-width: 768px) {
@@ -286,7 +287,7 @@ a, a:visited, a:hover, a:active {
     position: relative;
     margin: auto;
     padding: 0 1rem;
-    width: 320px;
+    max-width: 400px;
     overflow: hidden; }
     .testimonials .testimonials-images .img-desktop {
       position: relative;
@@ -321,11 +322,63 @@ a, a:visited, a:hover, a:active {
       background-color: #d4dde0; }
 
 .pricing-hero {
-  background: linear-gradient(#fee16c, #fcea96); }
+  background-image: url("/src/assets/pricing_images/header_pattern.png"), linear-gradient(#fee16c, #fcea96); }
   .pricing-hero .pricing-hero-text {
     text-align: center;
     color: #fff;
     font-size: 2rem;
-    padding: 0 3rem; }
+    padding-top: 60px; }
+    @media screen and (min-width: 768px) {
+      .pricing-hero .pricing-hero-text {
+        margin-top: 0;
+        margin-bottom: 100px;
+        padding-top: 0; } }
+  .pricing-hero .pricing-hero-images {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 2rem 1rem 0; }
+    .pricing-hero .pricing-hero-images:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 768px) {
+      .pricing-hero .pricing-hero-images {
+        max-width: 500px; } }
+    .pricing-hero .pricing-hero-images .pricing-hero-images-left {
+      width: 173px;
+      float: left;
+      position: relative;
+      left: 23px; }
+      @media screen and (min-width: 768px) {
+        .pricing-hero .pricing-hero-images .pricing-hero-images-left {
+          left: 0; } }
+    .pricing-hero .pricing-hero-images .pricing-hero-images-right {
+      width: 115px;
+      position: relative;
+      float: right;
+      top: 100px;
+      right: 23px; }
+      @media screen and (min-width: 768px) {
+        .pricing-hero .pricing-hero-images .pricing-hero-images-right {
+          right: 50px;
+          top: 55px; } }
+
+.pricing-description {
+  position: relative;
+  background-image: url("/src/assets/pricing_images/pricing_illustration2.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 460px;
+  min-height: 250px; }
+  @media screen and (min-width: 768px) {
+    .pricing-description {
+      background-position-x: left; } }
+  .pricing-description .pricing-content {
+    padding-top: 195px; }
+    @media screen and (min-width: 768px) {
+      .pricing-description .pricing-content {
+        padding-top: 0;
+        padding-left: 280px; } }
 
 /*# sourceMappingURL=application.css.map */

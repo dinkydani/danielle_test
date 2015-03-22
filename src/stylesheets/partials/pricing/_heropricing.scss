@@ -1,10 +1,54 @@
+$header_pattern: url("/src/assets/pricing_images/header_pattern.png");
+
 .pricing-hero {
-  background: linear-gradient($dark-yellow-background, $light-yellow-background); 
+  background-image: $header_pattern, linear-gradient($dark-yellow-background, $light-yellow-background); 
 
   .pricing-hero-text {
     text-align: center;
     color: $light-font-color;
     font-size: 2rem;
-    padding: 0 3rem;
+    padding-top: 60px;
+
+    @media screen and (min-width: $screen-tablet) {
+      margin-top: 0;
+      margin-bottom: 100px;
+      padding-top: 0;
+    }
+  }
+
+  .pricing-hero-images {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 2rem 1rem 0;
+
+    @include clear-floats;
+
+    @media screen and (min-width: $screen-tablet) {
+      max-width: 500px;
+    }
+
+    .pricing-hero-images-left {
+      width: 173px;
+      float: left;
+      position: relative;
+      left: 23px;
+
+      @media screen and (min-width: $screen-tablet) {
+        left: 0;
+      }
+    }
+    .pricing-hero-images-right {
+      width: 115px;
+      position: relative;
+      float: right;
+      top: 100px;
+      right: 23px;
+
+      @media screen and (min-width: $screen-tablet) {
+        right: 50px;
+        top: 55px;
+      }
+    }
   }
 }

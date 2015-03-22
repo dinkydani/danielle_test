@@ -61,7 +61,7 @@
     margin: 0 1rem;
     cursor: pointer;
 
-    div {
+    .burger-line {
       background-color: $burger-color;
       height: 5px;
       margin-top: 4px;
@@ -72,14 +72,20 @@
 
 }
 
-.header.expanded .burger div:first-child {
-  transform: translateY(10px)rotate(45deg);
+.burger-line:first-child {
+  .header.expanded & {
+    transform: translateY(10px)rotate(45deg);
+  }
 }
-.header.expanded .middle {
-  opacity: 0;
+.middle {
+  .header.expanded & {
+    opacity: 0;
+  }
 }
-.header.expanded .burger div:last-child {
-  transform: translateY(-8px)rotate(-45deg);
+.burger-line:last-child {
+  .header.expanded & {
+    transform: translateY(-8px)rotate(-45deg);
+  }
 }
 
 // @media only screen and (min-width: 768px) {
