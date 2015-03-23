@@ -389,41 +389,26 @@ a, a:visited, a:hover, a:active {
   .pricing-table .table-header {
     color: #fff;
     height: 50px; }
-    .pricing-table .table-header .header-grey {
-      background-color: #a3b8bf; }
-    .pricing-table .table-header .header-blue {
-      background-color: #5fbaff; }
-    .pricing-table .table-header .header-green {
-      background-color: #9acb3f; }
-    .pricing-table .table-header .header-orange {
+    .pricing-table .table-header .cell:nth-last-child(1) {
       background-color: #ffad00; }
+    .pricing-table .table-header .cell:nth-last-child(2) {
+      background-color: #9acb3f; }
+    .pricing-table .table-header .cell:nth-last-child(3) {
+      background-color: #5fbaff; }
+    .pricing-table .table-header .cell:nth-last-child(4) {
+      background-color: #a3b8bf; }
   .pricing-table .row {
     display: table-row; }
-  .pricing-table .cell {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0.8rem;
-    border: 1px solid rgba(239, 242, 243, 0.5); }
-  .pricing-table .cell-desc {
-    width: 30%;
-    text-align: left; }
-  .pricing-table .cell-pricing {
-    width: 20%;
-    text-align: center; }
-  .pricing-table .blue-selected {
-    background-color: #dff1ff;
-    background-image: url("/src/assets/pricing_images/table_check_blue.png"), radial-gradient(#fff, #dff1ff);
-    background-repeat: no-repeat;
-    background-position: center; }
-  .pricing-table .green-selected {
-    background-color: #e5f2cf;
-    background-image: url("/src/assets/pricing_images/table_check_green.png"), radial-gradient(#fff, #e5f2cf);
-    background-repeat: no-repeat;
-    background-position: center; }
-  .pricing-table .orange-selected {
-    background-color: #ffefcc;
-    background-image: url("/src/assets/pricing_images/table_check_orange.png"), radial-gradient(#fff, #ffefcc);
-    background-repeat: no-repeat;
-    background-position: center; }
+    .pricing-table .row .cell {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0.8rem;
+      border: 1px solid rgba(239, 242, 243, 0.5); }
+    .pricing-table .row .cell:nth-last-child(1).selected {
+      background: radial-gradient(#fff, #ffefcc); }
+    .pricing-table .row .cell:nth-last-child(2).selected {
+      background: radial-gradient(#fff, #e5f2cf); }
+    .pricing-table .row .cell:nth-last-child(3).selected {
+      background: radial-gradient(#fff, #dff1ff); }
 
 /*# sourceMappingURL=application.css.map */
