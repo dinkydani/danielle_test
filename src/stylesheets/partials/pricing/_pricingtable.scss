@@ -1,3 +1,64 @@
 .pricing-table {
+  display: table;
+  width: 100%;
+  font-family: $sans-font-family;
+  font-size: 0.7rem;
   
+  .table-header {
+    color: $light-font-color;
+    height: 50px;
+
+    .header-grey {
+      background-color: $pricing-table-header-grey;
+    }
+    .header-blue {
+      background-color: $pricing-table-header-blue;
+    }
+    .header-green {
+      background-color: $pricing-table-header-green;
+    }
+    .header-orange {
+      background-color: $pricing-table-header-orange;
+    }
+  }
+  
+  .row {
+    display: table-row;
+  }
+
+  .cell{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.8rem;
+    border: 1px solid rgba(239, 242, 243, 0.5);
+  }
+
+  .cell-desc {
+    width: 30%;
+    text-align: left;
+  }
+  .cell-pricing {
+    width: 20%;
+    text-align: center;
+  }
+
+  .blue-selected {
+    background-color: $pricing-table-cell-blue;
+    background-image: url("/src/assets/pricing_images/table_check_blue.png"), radial-gradient(#fff, $pricing-table-cell-blue);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .green-selected {
+    background-color: $pricing-table-cell-green;
+    background-image: url("/src/assets/pricing_images/table_check_green.png"), radial-gradient(#fff, $pricing-table-cell-green);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .orange-selected {
+    background-color: $pricing-table-cell-orange;
+    background-image: url("/src/assets/pricing_images/table_check_orange.png"), radial-gradient(#fff, $pricing-table-cell-orange);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 }
