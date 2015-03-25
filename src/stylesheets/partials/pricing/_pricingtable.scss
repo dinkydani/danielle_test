@@ -31,6 +31,11 @@
       padding: 0.8rem;
       border: 1px solid rgba(239, 242, 243, 0.5);
     }
+
+    .cell:not(.cell-header):nth-last-child(-n+3):hover {
+      cursor: pointer;
+      -webkit-user-select: none;
+    }
     
     .cell:nth-last-child(1).selected {
       background: radial-gradient(#fff, $pricing-table-cell-orange);
@@ -41,5 +46,32 @@
     .cell:nth-last-child(3).selected {
       background: radial-gradient(#fff, $pricing-table-cell-blue);
     }
+  }
+}
+
+.check-box {
+
+  &:before{
+    content:"";
+    position: absolute;
+    width:8px;
+    height:46px;
+    background-color: $pricing-table-check-orange;
+    transform: rotate(45deg);
+    right: 22px;
+    top: 9px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &:after{
+    content:"";
+    position: absolute;
+    width:8px;
+    height:22px;
+    background-color: $pricing-table-check-orange;
+    left:14px;
+    top:32px;
+    transform: rotate(-45deg);
+    border-radius: 5px 5px 0 0;
   }
 }

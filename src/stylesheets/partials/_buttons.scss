@@ -1,9 +1,3 @@
-$red-button: #ef6258;
-$red-button-hover: darken($red-button, 5%);
-
-$blue-button: #5fb9ff;
-$blue-button-hover: darken($blue-button, 5%);
-
 .btn {
   cursor: pointer;
   text-transform: uppercase;
@@ -41,6 +35,17 @@ $blue-button-hover: darken($blue-button, 5%);
     &:active {
       cursor: pointer;
       background: $button-blue-hover;
+    }
+  }
+  &.btn-green {
+    background: $button-green;
+    transition: background 0.5s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      background: $button-green-hover;
     }
   }
 }

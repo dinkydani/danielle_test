@@ -28,23 +28,39 @@
   .header-links {
     padding-top: 60px;
     list-style: none;
+    @media screen and (min-width: $screen-tablet) {
+      padding-top: 0;
+      float: right;
+      margin: 0 1rem;
+    }
 
     .header-links-item {
       width: 70%;
       margin: auto;
 
+      @media screen and (min-width: $screen-tablet) {
+        width: auto;
+        display: inline-block;
+        
+      }
+
       a {
         display: block;
-        padding: 0.5rem;
-        margin: 0.5rem 0;
+        padding: 8px;
+        margin: 8px 0;
         text-align: center;
-        border-bottom: 3px transparent solid;
         transition: all 0.4s ease;
+        border-radius: 5px;
 
+        @media screen and (min-width: $screen-tablet) {
+          padding: 8px 12px;
+          margin: 18px 4px;
+        }
+        
         &:hover,
         &:active,
         &:focus {
-          border-bottom: 3px white solid;
+          background-color: $header-hover-color;
         }
       }
 
@@ -60,6 +76,10 @@
     padding: 8px;
     margin: 0 1rem;
     cursor: pointer;
+
+    @media screen and (min-width: $screen-tablet) {
+      display: none;
+    }
 
     .burger-line {
       background-color: $burger-color;
