@@ -10,21 +10,21 @@
 
   .pricing-total-header {
     background-color: $pricing-total-header;
-    height: 60px;
+    height: 45px;
     color: $light-font-color;
   }
 
   .header-total-text {
     &:nth-child(1) {
       float: left;
-      font-size: 1.8rem;
-      padding: 20px 0;
+      font-size: 1.4rem;
+      padding: 13px 0;
       margin: 0 0 0 25px;
     }
     &:nth-child(2) {
       float: right;
       font-size: 1rem;
-      padding: 20px 0;
+      padding: 13px 0;
       margin: 0 36px 0 0;
     }
     &:after{
@@ -35,6 +35,7 @@
   .pricing-total-items {
     display: table;
     margin: 14px auto;
+    font-size: 0.8rem;
     
     .row {
       display: table-row;
@@ -42,7 +43,7 @@
     .cell {
       display: table-cell;
       vertical-align: middle;
-      padding: 12px;
+      padding: 4px 12px;
     }
     .cart-delete {
       color: $pricing-table-cart-delete-color;
