@@ -405,9 +405,13 @@ a, a:visited, a:hover, a:active {
 
 .pricing-table {
   display: table;
+  margin: 0 auto;
   width: 100%;
+  max-width: 600px;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  text-align: center;
+  background-color: #fff; }
   .pricing-table .table-header {
     color: #fff;
     height: 50px; }
@@ -419,6 +423,8 @@ a, a:visited, a:hover, a:active {
       background-color: #5fbaff; }
     .pricing-table .table-header .cell:nth-last-child(4) {
       background-color: #a3b8bf; }
+    .pricing-table .table-header .cell:nth-last-child(5) {
+      background-color: #a3b8bf; }
   .pricing-table .row {
     display: table-row; }
     .pricing-table .row .cell {
@@ -426,6 +432,15 @@ a, a:visited, a:hover, a:active {
       vertical-align: middle;
       padding: 0.8rem;
       border: 1px solid rgba(239, 242, 243, 0.5); }
+    .pricing-table .row .cell:nth-child(1) {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .pricing-table .row .cell:nth-child(1) {
+          display: table-cell; } }
+      .pricing-table .row .cell:nth-child(1):not(.cell-header) {
+        padding: 0.5rem; }
+    .pricing-table .row .cell:nth-child(2) {
+      text-align: left; }
     .pricing-table .row .cell:not(.cell-header):nth-last-child(-n+3):hover {
       cursor: pointer;
       -webkit-user-select: none; }
@@ -435,27 +450,6 @@ a, a:visited, a:hover, a:active {
       background: radial-gradient(#fff, #e5f2cf); }
     .pricing-table .row .cell:nth-last-child(3).selected {
       background: radial-gradient(#fff, #dff1ff); }
-
-.check-box:before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 46px;
-  background-color: #ffd782;
-  transform: rotate(45deg);
-  right: 22px;
-  top: 9px;
-  border-radius: 5px 5px 0 0; }
-.check-box:after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 22px;
-  background-color: #ffd782;
-  left: 14px;
-  top: 32px;
-  transform: rotate(-45deg);
-  border-radius: 5px 5px 0 0; }
 
 .pricing-total {
   padding: 3rem 0; }
