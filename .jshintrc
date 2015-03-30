@@ -1,0 +1,18 @@
+{
+  "eqeqeq": true,
+  "indent": 4,
+  "lastsemic": false,
+  "quotmark": true,
+  "strict": true,
+  "undef": true,
+
+  "browser": true,
+  "globals": {
+      "$": true,
+      "jQuery": true,
+      "console": true,
+      "module": true,
+      "Handlebars": true,
+      "Squarecat": true
+  }
+}

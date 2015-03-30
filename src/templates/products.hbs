@@ -1,0 +1,19 @@
+<div class="row table-header">
+  <span class="cell cell-header">Item</span>
+  <span class="cell cell-header">Description</span>
+  <span class="cell cell-header">BASIC</span>
+  <span class="cell cell-header">PRO</span>
+  <span class="cell cell-header">ULT</span>
+</div>
+
+{{#products}}
+  <div class="row">
+    <span class="cell"><img src="assets/pricing_images/table_icon{{inc @index}}.png" alt=""></span>
+    <span class="cell">{{name}}<br>{{description}}</span>
+    {{#prices}}
+      <span class="cell">£{{basic}}</span>
+      <span class="cell">£{{pro}}</span>
+      <span class="cell">£{{ultimate}}</span>
+    {{/prices}}
+  </div>
+{{/products}}

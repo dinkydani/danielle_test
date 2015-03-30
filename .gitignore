@@ -1,11 +1,7 @@
 .DS_Store
 .sass-cache
 resources/
-vendor/
 dist/
 
+node_modules
 
-# Was testing templates
-data/
-src/javascript/pricing-total.js
-vendor/handlebars-v3.0.0.js

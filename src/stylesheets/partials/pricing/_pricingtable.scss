@@ -56,18 +56,24 @@
     }
 
     // Selectable cells
-    .cell:not(.cell-header):nth-last-child(-n+3):hover {
-      cursor: pointer;
-      -webkit-user-select: none;
+    .cell:not(.cell-header):nth-last-child(-n+3) {
+      @media screen and (min-width: $screen-tablet) {
+        max-width: 84px;
+        max-height: 84px;
+      }
+      &:hover {
+        cursor: pointer;
+        -webkit-user-select: none;
+      }
     }
     .cell:nth-last-child(1).selected {
-      background: radial-gradient(#fff, $pricing-table-cell-orange);
+      background: $pricing-table-cell-orange;
     }
     .cell:nth-last-child(2).selected {
-      background: radial-gradient(#fff, $pricing-table-cell-green);
+      background: $pricing-table-cell-green;
     }
     .cell:nth-last-child(3).selected {
-      background: radial-gradient(#fff, $pricing-table-cell-blue);
+      background: $pricing-table-cell-blue;
     }
   }
 }

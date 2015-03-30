@@ -441,15 +441,19 @@ a, a:visited, a:hover, a:active {
         padding: 0.5rem; }
     .pricing-table .row .cell:nth-child(2) {
       text-align: left; }
+    @media screen and (min-width: 768px) {
+      .pricing-table .row .cell:not(.cell-header):nth-last-child(-n+3) {
+        max-width: 84px;
+        max-height: 84px; } }
     .pricing-table .row .cell:not(.cell-header):nth-last-child(-n+3):hover {
       cursor: pointer;
       -webkit-user-select: none; }
     .pricing-table .row .cell:nth-last-child(1).selected {
-      background: radial-gradient(#fff, #ffefcc); }
+      background: #ffefcc; }
     .pricing-table .row .cell:nth-last-child(2).selected {
-      background: radial-gradient(#fff, #e5f2cf); }
+      background: #e5f2cf; }
     .pricing-table .row .cell:nth-last-child(3).selected {
-      background: radial-gradient(#fff, #dff1ff); }
+      background: #dff1ff; }
 
 .pricing-total {
   padding: 3rem 0; }
