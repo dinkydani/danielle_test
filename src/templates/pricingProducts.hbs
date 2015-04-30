@@ -6,14 +6,12 @@
   <span class="cell cell-header">ULT</span>
 </div>
 
-{{#products}}
-  <div class="row">
+{{#each products}}
+  <div class="row" data-product-name={{name}}>
     <span class="cell"><img src="assets/pricing_images/table_icon{{inc @index}}.png" alt=""></span>
     <span class="cell">{{name}}<br>{{description}}</span>
-    {{#prices}}
-      <span class="cell">£{{basic}}</span>
-      <span class="cell">£{{pro}}</span>
-      <span class="cell">£{{ultimate}}</span>
-    {{/prices}}
+    <span class="cell selectable" data-product-price={{prices.basic}}>£{{prices.basic}}</span>
+    <span class="cell selectable" data-product-price={{prices.pro}}>£{{prices.pro}}</span>
+    <span class="cell selectable" data-product-price={{prices.ultimate}}>£{{prices.ultimate}}</span>
   </div>
-{{/products}}
+{{/each}}

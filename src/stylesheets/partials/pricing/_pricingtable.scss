@@ -28,7 +28,7 @@
       background-color: $pricing-table-header-grey;
     }
   }
-  
+
   .row {
     display: table-row;
     
@@ -56,7 +56,7 @@
     }
 
     // Selectable cells
-    .cell:not(.cell-header):nth-last-child(-n+3) {
+    .cell.selectable {
       @media screen and (min-width: $screen-tablet) {
         max-width: 84px;
         max-height: 84px;
@@ -68,12 +68,55 @@
     }
     .cell:nth-last-child(1).selected {
       background: $pricing-table-cell-orange;
+      position: relative;
+      &:after {
+        content: "\F00C";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 40px;
+        color: $pricing-table-check-orange;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+      }
     }
     .cell:nth-last-child(2).selected {
       background: $pricing-table-cell-green;
+      position: relative;
+      &:after {
+        content: "\F00C";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 40px;
+        color: $pricing-table-check-green;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+      }
     }
     .cell:nth-last-child(3).selected {
       background: $pricing-table-cell-blue;
+      position: relative;
+      &:after {
+        content: "\F00C";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 40px;
+        color: $pricing-table-check-blue;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+      }
     }
+
   }
 }
