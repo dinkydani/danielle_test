@@ -1,20 +1,20 @@
-.pricing-total {
+.pricing-cart {
 
   padding: 3rem 0;
 
-  .pricing-total-panel {
+  .pricing-cart-panel {
     width: 260px;
     margin: auto;
     background-color: $light-background;
   }
 
-  .pricing-total-header {
-    background-color: $pricing-total-header;
+  .pricing-cart-header {
+    background-color: $pricing-cart-header-color;
     height: 45px;
     color: $light-font-color;
   }
 
-  .header-total-text {
+  .header-cart-text {
     &:nth-child(1) {
       float: left;
       font-size: 1.4rem;
@@ -32,7 +32,7 @@
     }
   }
 
-  .pricing-total-items {
+  .pricing-cart-items {
     display: table;
     margin: 14px auto;
     font-size: 0.8rem;
@@ -44,21 +44,25 @@
       display: table-cell;
       vertical-align: middle;
       padding: 4px 12px;
+
+      .pricing-cart-product-name {
+        width: 50%;
+      }
     }
-    .cart-delete {
-      color: $pricing-table-cart-delete-color;
+    .pricing-cart-item-delete {
+      color: $pricing-cart-delete-color;
       -webkit-user-select: none;
 
       &:hover,
       &:focus,
       &:active {
         cursor: pointer;
-        color: $pricing-table-cart-delete-color-hover;
+        color: $pricing-cart-delete-color-hover;
       }
     }
   }
 
-  .pricing-total-button {
+  .pricing-cart-button {
     text-align: center;
     padding: 16px 0;
       .btn {

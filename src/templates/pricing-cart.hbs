@@ -1,0 +1,20 @@
+<div class="pricing-cart-header">
+  <p class="header-cart-text">£{{calculateTotalPrice this}}</p>
+  <p class="header-cart-text">Total</p>
+</div>
+
+<div class="pricing-cart-items">
+{{#each this}}
+  <div class="row"></span>
+    <span class="cell"><i class="pricing-cart-item-delete fa fa-times-circle fa-2x"data-cart-product-name={{@key}}></i></span>
+    <span class="cell pricing-cart-product-name">{{@key}}</span>
+    <span class="cell">£{{this}}</span>
+  </div>
+{{/each}}
+</div>
+
+<div class="pricing-cart-button">
+  <div class="btn btn-green">
+    <a href="#">Checkout</a>
+  </div>
+</div>

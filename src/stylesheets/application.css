@@ -442,63 +442,104 @@ a, a:visited, a:hover, a:active {
     .pricing-table .row .cell:nth-child(2) {
       text-align: left; }
     @media screen and (min-width: 768px) {
-      .pricing-table .row .cell:not(.cell-header):nth-last-child(-n+3) {
+      .pricing-table .row .cell.selectable {
         max-width: 84px;
         max-height: 84px; } }
-    .pricing-table .row .cell:not(.cell-header):nth-last-child(-n+3):hover {
+    .pricing-table .row .cell.selectable:hover {
       cursor: pointer;
       -webkit-user-select: none; }
     .pricing-table .row .cell:nth-last-child(1).selected {
-      background: #ffefcc; }
+      background: #ffefcc;
+      position: relative; }
+      .pricing-table .row .cell:nth-last-child(1).selected:after {
+        content: "\F00C";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 40px;
+        color: #ffd782;
+        top: 50%;
+        left: 50%;
+        z-index: 1; }
     .pricing-table .row .cell:nth-last-child(2).selected {
-      background: #e5f2cf; }
+      background: #e5f2cf;
+      position: relative; }
+      .pricing-table .row .cell:nth-last-child(2).selected:after {
+        content: "\F00C";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 40px;
+        color: #c4e08f;
+        top: 50%;
+        left: 50%;
+        z-index: 1; }
     .pricing-table .row .cell:nth-last-child(3).selected {
-      background: #dff1ff; }
+      background: #dff1ff;
+      position: relative; }
+      .pricing-table .row .cell:nth-last-child(3).selected:after {
+        content: "\F00C";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 40px;
+        color: #aadcfa;
+        top: 50%;
+        left: 50%;
+        z-index: 1; }
 
-.pricing-total {
+.pricing-cart {
   padding: 3rem 0; }
-  .pricing-total .pricing-total-panel {
+  .pricing-cart .pricing-cart-panel {
     width: 260px;
     margin: auto;
     background-color: #fff; }
-  .pricing-total .pricing-total-header {
+  .pricing-cart .pricing-cart-header {
     background-color: #ed4e42;
     height: 45px;
     color: #fff; }
-  .pricing-total .header-total-text:nth-child(1) {
+  .pricing-cart .header-cart-text:nth-child(1) {
     float: left;
     font-size: 1.4rem;
     padding: 13px 0;
     margin: 0 0 0 25px; }
-  .pricing-total .header-total-text:nth-child(2) {
+  .pricing-cart .header-cart-text:nth-child(2) {
     float: right;
     font-size: 1rem;
     padding: 13px 0;
     margin: 0 36px 0 0; }
-  .pricing-total .header-total-text:after:after {
+  .pricing-cart .header-cart-text:after:after {
     content: "";
     display: table;
     clear: both; }
-  .pricing-total .pricing-total-items {
+  .pricing-cart .pricing-cart-items {
     display: table;
     margin: 14px auto;
     font-size: 0.8rem; }
-    .pricing-total .pricing-total-items .row {
+    .pricing-cart .pricing-cart-items .row {
       display: table-row; }
-    .pricing-total .pricing-total-items .cell {
+    .pricing-cart .pricing-cart-items .cell {
       display: table-cell;
       vertical-align: middle;
       padding: 4px 12px; }
-    .pricing-total .pricing-total-items .cart-delete {
+      .pricing-cart .pricing-cart-items .cell .pricing-cart-product-name {
+        width: 50%; }
+    .pricing-cart .pricing-cart-items .pricing-cart-item-delete {
       color: #e9edef;
       -webkit-user-select: none; }
-      .pricing-total .pricing-total-items .cart-delete:hover, .pricing-total .pricing-total-items .cart-delete:focus, .pricing-total .pricing-total-items .cart-delete:active {
+      .pricing-cart .pricing-cart-items .pricing-cart-item-delete:hover, .pricing-cart .pricing-cart-items .pricing-cart-item-delete:focus, .pricing-cart .pricing-cart-items .pricing-cart-item-delete:active {
         cursor: pointer;
         color: #d7dcde; }
-  .pricing-total .pricing-total-button {
+  .pricing-cart .pricing-cart-button {
     text-align: center;
     padding: 16px 0; }
-    .pricing-total .pricing-total-button .btn {
+    .pricing-cart .pricing-cart-button .btn {
       margin: 0; }
 
 /*# sourceMappingURL=application.css.map */

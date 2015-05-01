@@ -20,7 +20,7 @@ $(function(){
     $(this).siblings().removeClass("selected");
     $(this).toggleClass("selected");
 
-    var productName = $(e.currentTarget).closest(".row").data('productName');
+    var productName = $(e.currentTarget).closest(".row").data("productName");
 
     if( $(this).hasClass("selected") ){
       var productPrice = this.getAttribute("data-product-price");
@@ -33,7 +33,7 @@ $(function(){
   };
 
   var clickCartDelete = function (e) {
-    var productName = $(e.currentTarget).data("totalName");
+    var productName = $(e.currentTarget).data("cartProductName");
     var $selectedCell = $("[data-product-name='" + productName + "'] .cell.selected");
     $selectedCell.toggleClass("selected");
     delete selectedProducts[productName];
@@ -43,17 +43,17 @@ $(function(){
 
   $(".pricing-table").on("click", ".cell.selectable", clickSelectableCell);
 
-  $(".pricing-total-panel").on("click", ".cart-delete", clickCartDelete);
+  $(".pricing-cart-panel").on("click", ".pricing-cart-item-delete", clickCartDelete);
   
 
   var renderCart = function () {
-    var cartTemplate = Squarecat.templates["src/templates/pricingTotal.hbs"];
-    $(".pricing-total-panel").html(cartTemplate(selectedProducts));
+    var cartTemplate = Squarecat.templates["src/templates/pricing-cart.hbs"];
+    $(".pricing-cart-panel").html(cartTemplate(selectedProducts));
   };
 
   var renderTemplates = function () {
 
-    var productsTemplate = Squarecat.templates["src/templates/pricingProducts.hbs"];
+    var productsTemplate = Squarecat.templates["src/templates/pricing-products.hbs"];
     var data = $.getJSON("data/products.json", function (data) {
       $(".pricing-table").html(productsTemplate(data));
     });
