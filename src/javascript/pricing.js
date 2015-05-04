@@ -64,6 +64,36 @@ $(function(){
 
 
   renderTemplates();
+  
+
+  var $pricingTable = $(".pricing-table");
+  var $tableHeader = $(".pricing-table .table-header");
+  var $cartHeader = $(".pricing-cart-header");
+  var $pricingCartHeader = $(".pricing-cart-header");
+
+  $(window).on("scroll", function () {
+    var scrollTop = $(this).scrollTop();
+    var viewportHeight = $(window).height();
+    //when scrolltop plus viewport equals table plus header 
+
+    var pricingTableHeight = $pricingTable.height();
+    var tableHeaderHeight = $tableHeader.height();
+    var cartHeaderHeight = $cartHeader.height();
+
+    var offsetTop = $pricingTable.offset().top + tableHeaderHeight + cartHeaderHeight;
+    var offsetBottom = $pricingTable.offset().top + pricingTableHeight + cartHeaderHeight;;
+
+    var topCond = (scrollTop + viewportHeight) > offsetTop;
+    var botCond = (scrollTop + viewportHeight) < offsetBottom;
+
+    if(topCond && botCond) {
+      $pricingCartHeader.addClass("fixed");
+    } else {
+      $pricingCartHeader.removeClass("fixed");
+    }
+  });
+
+
 
   
 });

@@ -12,6 +12,18 @@
     background-color: $pricing-cart-header-color;
     height: 45px;
     color: $light-font-color;
+    
+    &.fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+    }
+
+    @media screen and (min-width: $screen-desktop) {
+      position: relative;
+    }
   }
 
   .header-cart-text {

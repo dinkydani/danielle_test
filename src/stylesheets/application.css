@@ -54,7 +54,7 @@ section {
 
   .wrap {
     width: 80%; } }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   html {
     font-size: 18px; }
 
@@ -407,11 +407,13 @@ a, a:visited, a:hover, a:active {
   display: table;
   margin: 0 auto;
   width: 100%;
-  max-width: 600px;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 0.7rem;
   text-align: center;
   background-color: #fff; }
+  @media screen and (min-width: 1024px) {
+    .pricing-table {
+      max-width: 600px; } }
   .pricing-table .table-header {
     color: #fff;
     height: 50px; }
@@ -435,7 +437,7 @@ a, a:visited, a:hover, a:active {
       z-index: 2; }
     .pricing-table .row .cell:nth-child(1) {
       display: none; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 600px) {
         .pricing-table .row .cell:nth-child(1) {
           display: table-cell; } }
       .pricing-table .row .cell:nth-child(1):not(.cell-header) {
@@ -493,6 +495,15 @@ a, a:visited, a:hover, a:active {
     background-color: #ed4e42;
     height: 45px;
     color: #fff; }
+    .pricing-cart .pricing-cart-header.fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 5; }
+    @media screen and (min-width: 1024px) {
+      .pricing-cart .pricing-cart-header {
+        position: relative; } }
   .pricing-cart .header-cart-text:nth-child(1) {
     float: left;
     font-size: 1.4rem;
