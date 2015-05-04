@@ -9,9 +9,20 @@
 {{#each products}}
   <div class="row" data-product-name={{name}}>
     <span class="cell"><img src="assets/pricing_images/table_icon{{inc @index}}.png" alt=""></span>
-    <span class="cell">{{name}}<br>{{description}}</span>
-    <span class="cell selectable" data-product-price={{prices.basic}}>£{{prices.basic}}</span>
-    <span class="cell selectable" data-product-price={{prices.pro}}>£{{prices.pro}}</span>
-    <span class="cell selectable" data-product-price={{prices.ultimate}}>£{{prices.ultimate}}</span>
+    <span class="cell">
+      <span class="pricing-name">{{name}}</span><span>{{description}}</span>
+    </span>
+    <span class="cell selectable" data-product-price={{prices.basic}}>
+      <span class="product-price">£{{prices.basic}}</span>
+      <span class="product-price-description">Lorem ipsum dolor</span>
+    </span>
+    <span class="cell selectable" data-product-price={{prices.pro}}>
+      <span class="product-price">£{{prices.pro}}</span>
+      <span class="product-price-description">Lorem ipsum dolor</span>
+    </span>
+    <span class="cell selectable" data-product-price={{prices.ultimate}}>
+      <span class="product-price">£{{prices.ultimate}}</span>
+      <span class="product-price-description">Lorem ipsum dolor</span>
+    </span>
   </div>
 {{/each}}
