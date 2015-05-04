@@ -124,7 +124,7 @@ a, a:visited, a:hover, a:active {
   text-transform: uppercase;
   overflow: hidden;
   z-index: 10;
-  transition: background-color, color 0.5s ease; }
+  transition: all 0.5s ease; }
   .header .logo {
     float: left;
     padding: 10px 0;
