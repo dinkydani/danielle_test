@@ -17,7 +17,7 @@
   text-transform: uppercase;
   overflow: hidden;
   z-index: 10;
-  transition: all 0.5s ease;
+  transition: background-color, color 0.5s ease;
 
   .logo {
     float: left;
