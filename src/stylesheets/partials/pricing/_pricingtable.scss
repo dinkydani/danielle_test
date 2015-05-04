@@ -6,7 +6,11 @@
   font-family: $sans-font-family;
   font-size: 0.7rem;
   text-align: center;
-  background-color: $light-background;
+
+  @media screen and (min-width: $screen-tablet) {
+    padding: 3rem 0;
+    margin: 0 3rem;
+  }
   
   .table-header {
     color: $light-font-color;
@@ -31,6 +35,7 @@
 
   .row {
     display: table-row;
+    background-color: $light-background;
     
     .cell {
       display: table-cell;
@@ -43,6 +48,7 @@
     // Show and hide Item images
     .cell:nth-child(1) {
       display: none;
+
       @media screen and (min-width: $screen-tablet) {
         display: table-cell;
       }

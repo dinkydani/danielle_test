@@ -124,7 +124,7 @@ a, a:visited, a:hover, a:active {
   text-transform: uppercase;
   overflow: hidden;
   z-index: 10;
-  transition: all 0.5s ease; }
+  transition: background-color, color 0.5s ease; }
   .header .logo {
     float: left;
     padding: 10px 0;
@@ -410,8 +410,11 @@ a, a:visited, a:hover, a:active {
   max-width: 600px;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 0.7rem;
-  text-align: center;
-  background-color: #fff; }
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .pricing-table {
+      padding: 3rem 0;
+      margin: 0 3rem; } }
   .pricing-table .table-header {
     color: #fff;
     height: 50px; }
@@ -426,7 +429,8 @@ a, a:visited, a:hover, a:active {
     .pricing-table .table-header .cell:nth-last-child(5) {
       background-color: #a3b8bf; }
   .pricing-table .row {
-    display: table-row; }
+    display: table-row;
+    background-color: #fff; }
     .pricing-table .row .cell {
       display: table-cell;
       vertical-align: middle;
