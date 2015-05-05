@@ -14,11 +14,7 @@ this["Squarecat"]["templates"]["src/templates/pricing-cart.hbs"] = Handlebars.te
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"pricing-cart-header\">\n  <p class=\"header-cart-text\">£"
-    + this.escapeExpression((helpers.calculateTotalPrice || (depth0 && depth0.calculateTotalPrice) || helpers.helperMissing).call(depth0,depth0,{"name":"calculateTotalPrice","hash":{},"data":data}))
-    + "</p>\n  <p class=\"header-cart-text\">Total</p>\n</div>\n\n<div class=\"pricing-cart-items\">\n"
-    + ((stack1 = helpers.each.call(depth0,depth0,{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + "</div>\n\n<div class=\"pricing-cart-button\">\n  <div class=\"btn btn-green\">\n    <a href=\"#\">Checkout</a>\n  </div>\n</div>";
+  return ((stack1 = helpers.each.call(depth0,depth0,{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 
 this["Squarecat"]["templates"]["src/templates/pricing-products.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {

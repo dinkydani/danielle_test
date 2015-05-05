@@ -1,3 +1,5 @@
+var Squarecat = window.Squarecat || {};
+
 $(function(){
 
   "use strict";
@@ -6,14 +8,6 @@ $(function(){
 
   Handlebars.registerHelper("inc", function(value, options) {
     return parseInt(value) + 1;
-  });
-
-  Handlebars.registerHelper("calculateTotalPrice", function(options){
-    var total = 0;
-    $.each(this, function (key, item){
-      total += parseInt(item);
-    });
-    return total;
   });
 
   var clickSelectableCell = function (e) {
@@ -29,7 +23,7 @@ $(function(){
     else {
       delete selectedProducts[productName];
     }
-    renderCart();
+    renderCartItems();
   };
 
   var clickCartDelete = function (e) {
@@ -37,18 +31,28 @@ $(function(){
     var $selectedCell = $("[data-product-name='" + productName + "'] .cell.selected");
     $selectedCell.toggleClass("selected");
     delete selectedProducts[productName];
-    renderCart();  
+    renderCartItems();
   };
 
 
   $(".pricing-table").on("click", ".cell.selectable", clickSelectableCell);
 
-  $(".pricing-cart-panel").on("click", ".pricing-cart-item-delete", clickCartDelete);
+  $(".pricing-cart-items").on("click", ".pricing-cart-item-delete", clickCartDelete);
   
 
-  var renderCart = function () {
+  var renderCartItems = function () {
     var cartTemplate = Squarecat.templates["src/templates/pricing-cart.hbs"];
-    $(".pricing-cart-panel").html(cartTemplate(selectedProducts));
+    $(".pricing-cart-items").html(cartTemplate(selectedProducts));
+    $(".header-cart-amount").text("£" + calculateTotalPrice());
+  };
+
+  var calculateTotalPrice = function () {
+    var total = 0;
+    console.log(selectedProducts);
+    $.each(selectedProducts, function (key, item){
+      total += parseInt(item);
+    });
+    return total;
   };
 
   var renderTemplates = function () {
@@ -58,12 +62,42 @@ $(function(){
       $(".pricing-table").html(productsTemplate(data));
     });
 
-    renderCart();
+    renderCartItems();
 
   };
 
 
   renderTemplates();
+  
+
+  var $pricingTable = $(".pricing-table");
+  var $tableHeader = $(".pricing-table .table-header");
+  var $cartHeader = $(".pricing-cart-header");
+  var $cartItems = $(".pricing-cart-items");
+
+  $(window).on("scroll", function () {
+    var scrollTop = $(this).scrollTop();
+    var viewportHeight = $(window).height();
+    //when scrolltop plus viewport equals table plus header 
+
+    var pricingTableHeight = $pricingTable.height();
+    var tableHeaderHeight = $tableHeader.height();
+    var cartHeaderHeight = $cartHeader.height();
+
+    var offsetTop = $pricingTable.offset().top + tableHeaderHeight + cartHeaderHeight * 2;
+    var offsetBottom = $pricingTable.offset().top + pricingTableHeight + cartHeaderHeight;
+
+    var topCond = (scrollTop + viewportHeight) > offsetTop;
+    var bottomCond = (scrollTop + viewportHeight) < offsetBottom;
+
+    if(topCond && bottomCond) {
+      $cartHeader.addClass("fixed");
+    } else {
+      $cartHeader.removeClass("fixed");
+    }
+  });
+
+
 
   
 });

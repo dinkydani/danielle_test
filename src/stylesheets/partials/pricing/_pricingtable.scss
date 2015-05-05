@@ -2,14 +2,14 @@
   display: table;
   margin: 0 auto;
   width: 100%;
-  max-width: 600px;
   font-family: $sans-font-family;
   font-size: 0.7rem;
   text-align: center;
 
-  @media screen and (min-width: $screen-tablet) {
-    padding: 3rem 0;
-    margin: 0 3rem;
+  background-color: $light-background;
+
+  @media screen and (min-width: $screen-desktop) {
+    max-width: 600px;
   }
   
   .table-header {
@@ -49,7 +49,7 @@
     .cell:nth-child(1) {
       display: none;
 
-      @media screen and (min-width: $screen-tablet) {
+      @media screen and (min-width: 600px) {
         display: table-cell;
       }
       &:not(.cell-header) {
