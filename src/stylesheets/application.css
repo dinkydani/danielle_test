@@ -501,23 +501,23 @@ a, a:visited, a:hover, a:active {
       left: 0;
       right: 0;
       z-index: 5; }
+    .pricing-cart .pricing-cart-header:after:after {
+      content: "";
+      display: table;
+      clear: both; }
     @media screen and (min-width: 1024px) {
       .pricing-cart .pricing-cart-header {
         position: relative; } }
-  .pricing-cart .header-cart-text:nth-child(1) {
+  .pricing-cart .header-cart-amount {
     float: left;
     font-size: 1.4rem;
     padding: 13px 0;
     margin: 0 0 0 25px; }
-  .pricing-cart .header-cart-text:nth-child(2) {
+  .pricing-cart .header-cart-text {
     float: right;
     font-size: 1rem;
     padding: 13px 0;
     margin: 0 36px 0 0; }
-  .pricing-cart .header-cart-text:after:after {
-    content: "";
-    display: table;
-    clear: both; }
   .pricing-cart .pricing-cart-items {
     display: table;
     margin: 14px auto;
