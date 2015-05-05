@@ -81,12 +81,12 @@ $(function(){
     var cartHeaderHeight = $cartHeader.height();
 
     var offsetTop = $pricingTable.offset().top + tableHeaderHeight + cartHeaderHeight;
-    var offsetBottom = $pricingTable.offset().top + pricingTableHeight + cartHeaderHeight;;
+    var offsetBottom = $pricingTable.offset().top + pricingTableHeight + cartHeaderHeight;
 
     var topCond = (scrollTop + viewportHeight) > offsetTop;
-    var botCond = (scrollTop + viewportHeight) < offsetBottom;
+    var bottomCond = (scrollTop + viewportHeight) < offsetBottom;
 
-    if(topCond && botCond) {
+    if(topCond && bottomCond) {
       $pricingCartHeader.addClass("fixed");
     } else {
       $pricingCartHeader.removeClass("fixed");
