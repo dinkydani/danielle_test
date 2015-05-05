@@ -308,16 +308,17 @@ a, a:visited, a:hover, a:active {
   .testimonials .testimonials-images {
     position: relative;
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     max-width: 400px;
     overflow: hidden; }
     .testimonials .testimonials-images .img-desktop {
       position: relative;
-      width: 85%; }
+      width: 85%;
+      top: 5px; }
     .testimonials .testimonials-images .img-mobile {
       position: absolute;
       right: -26px;
-      bottom: 0;
+      bottom: -1px;
       width: 60%; }
     @media screen and (min-width: 768px) {
       .testimonials .testimonials-images {
