@@ -22,8 +22,6 @@ $header_pattern: url("/src/assets/pricing_images/header_pattern.png");
     margin: 0 auto;
     padding: 2rem 1rem 0;
 
-    @include clear-floats;
-
     @media screen and (min-width: $screen-tablet) {
       max-width: 500px;
     }

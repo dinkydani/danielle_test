@@ -1,5 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Merriweather");
 @import url("http://fonts.googleapis.com/css?family=Merriweather+Sans");
+.clearfix {
+  position: relative; }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 html {
   font-size: 16px;
   min-width: 320px;
@@ -22,15 +29,11 @@ section {
   padding: 3rem 0; }
 
 .main {
-  margin-top: 60px; }
+  margin-top: 59px; }
 
 .wrap {
   position: relative;
   margin: 0 auto; }
-  .wrap:after {
-    content: "";
-    display: table;
-    clear: both; }
 
 .dark-blue-background {
   background-color: #1d4c5c;
@@ -108,7 +111,7 @@ a, a:visited, a:hover, a:active {
       background: #8dbd33; }
 
 .header.expanded {
-  height: 250px; }
+  height: 230px; }
 
 .header {
   position: absolute;
@@ -120,7 +123,7 @@ a, a:visited, a:hover, a:active {
   background-color: #fee16c;
   color: #575145;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 12px;
   text-transform: uppercase;
   overflow: hidden;
   z-index: 10;
@@ -149,7 +152,7 @@ a, a:visited, a:hover, a:active {
         padding: 8px;
         margin: 8px 0;
         text-align: center;
-        transition: all 0.4s ease;
+        transition: background-color 0.4s ease;
         border-radius: 5px; }
         @media screen and (min-width: 768px) {
           .header .header-links .header-links-item a {
@@ -361,10 +364,6 @@ a, a:visited, a:hover, a:active {
     max-width: 320px;
     margin: 0 auto;
     padding: 2rem 1rem 0; }
-    .pricing-hero .pricing-hero-images:after {
-      content: "";
-      display: table;
-      clear: both; }
     @media screen and (min-width: 768px) {
       .pricing-hero .pricing-hero-images {
         max-width: 500px; } }
@@ -410,11 +409,13 @@ a, a:visited, a:hover, a:active {
   width: 100%;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 0.7rem;
-  text-align: center;
-  background-color: #fff; }
+  text-align: center; }
   @media screen and (min-width: 1024px) {
     .pricing-table {
-      max-width: 600px; } }
+      max-width: 70%;
+      margin: 0;
+      padding: 2rem;
+      float: left; } }
   .pricing-table .table-header {
     color: #fff;
     height: 50px; }
@@ -487,29 +488,44 @@ a, a:visited, a:hover, a:active {
       .pricing-table .row .cell:nth-last-child(3).selected:after {
         color: #aadcfa; }
 
+.pricing-container {
+  position: relative; }
+
 .pricing-cart {
   padding: 3rem 0; }
+  @media screen and (min-width: 1024px) {
+    .pricing-cart {
+      float: left;
+      padding: 0;
+      margin-top: -45px; } }
   .pricing-cart .pricing-cart-panel {
     width: 260px;
     margin: auto;
     background-color: #fff; }
+    @media screen and (min-width: 1024px) {
+      .pricing-cart .pricing-cart-panel.fixed {
+        position: fixed;
+        top: 0; }
+      .pricing-cart .pricing-cart-panel.bottom {
+        position: absolute;
+        bottom: 2rem;
+        top: auto; } }
   .pricing-cart .pricing-cart-header {
     background-color: #ed4e42;
     height: 45px;
-    color: #fff; }
-    .pricing-cart .pricing-cart-header.fixed {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 5; }
-    .pricing-cart .pricing-cart-header:after:after {
-      content: "";
-      display: table;
-      clear: both; }
-    @media screen and (min-width: 1024px) {
-      .pricing-cart .pricing-cart-header {
-        position: relative; } }
+    color: #fff;
+    transition: none;
+    bottom: 45px;
+    transform: translateY(45px); }
+    @media screen and (min-width: 768px) {
+      .pricing-cart .pricing-cart-header.fixed {
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(0);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10; } }
   .pricing-cart .header-cart-amount {
     float: left;
     font-size: 1.4rem;

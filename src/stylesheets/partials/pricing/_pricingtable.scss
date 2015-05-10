@@ -6,10 +6,11 @@
   font-size: 0.7rem;
   text-align: center;
 
-  background-color: $light-background;
-
   @media screen and (min-width: $screen-desktop) {
-    max-width: 600px;
+    max-width: 70%;
+    margin: 0;
+    padding: 2rem;
+    float: left;
   }
   
   .table-header {

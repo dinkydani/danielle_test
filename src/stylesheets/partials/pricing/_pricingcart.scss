@@ -1,31 +1,53 @@
+.pricing-container {
+  position: relative;
+}
+
 .pricing-cart {
 
   padding: 3rem 0;
+
+  @media screen and (min-width: $screen-desktop) {
+    float: left;
+    padding: 0;
+    margin-top: -45px;
+  }
 
   .pricing-cart-panel {
     width: 260px;
     margin: auto;
     background-color: $light-background;
+
+    @media screen and (min-width: $screen-desktop) {
+      &.fixed {
+        position: fixed;
+        top: 0;
+      }
+      &.bottom {
+        position: absolute;
+        bottom: 2rem;
+        top: auto;
+      }
+    }
   }
 
   .pricing-cart-header {
     background-color: $pricing-cart-header-color;
     height: 45px;
     color: $light-font-color;
-    
-    &.fixed {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 5;
-    }
-    &:after{
-      @include clear-floats;
-    }
+    transition: none;
+    bottom: 45px;
+    transform: translateY(45px);
 
-    @media screen and (min-width: $screen-desktop) {
-      position: relative;
+    @media screen and (min-width: $screen-tablet) {
+      &.fixed {
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(0);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+      }
     }
   }
 
