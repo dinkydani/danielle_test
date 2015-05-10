@@ -38,7 +38,7 @@
     bottom: 45px;
     transform: translateY(45px);
 
-    @media screen and (min-width: $screen-tablet) {
+    @media screen and (max-width: $screen-desktop) {
       &.fixed {
         transition: transform 0.5s ease-in-out;
         transform: translateY(0);

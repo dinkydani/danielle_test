@@ -517,7 +517,7 @@ a, a:visited, a:hover, a:active {
     transition: none;
     bottom: 45px;
     transform: translateY(45px); }
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1024px) {
       .pricing-cart .pricing-cart-header.fixed {
         transition: transform 0.5s ease-in-out;
         transform: translateY(0);
