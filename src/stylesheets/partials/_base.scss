@@ -21,14 +21,12 @@ section {
 }
 
 .main {
-  margin-top: 60px;
+  margin-top: 59px;
 }
 
 .wrap {
   position: relative;
   margin: 0 auto;
-
-  @include clear-floats;
 }
 
 .dark-blue-background {

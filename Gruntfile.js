@@ -30,6 +30,14 @@ module.exports = function(grunt) {
       handlebars: {
         files: ["src/templates/**/*.hbs"],
         tasks: ["handlebars"]
+      },
+      jshint: {
+        files: ["src/javascript/**/*.js"],
+        tasks: ["jshint"]
+      },
+      gruntfile: {
+        files: ["Gruntfile.js"],
+        tasks: ["default"]
       }
     },
 

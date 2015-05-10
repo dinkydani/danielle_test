@@ -35,18 +35,19 @@
   .testimonials-images {
     position: relative;
     margin: auto;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     max-width: 400px;
     overflow: hidden;
 
     .img-desktop {
       position: relative;
       width: 85%;
+      top: 5px;
     }
     .img-mobile {
       position: absolute;
       right: -26px;
-      bottom: 0;
+      bottom: -1px;
       width: 60%;
     }
 

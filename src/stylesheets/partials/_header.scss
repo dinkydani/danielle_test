@@ -1,5 +1,5 @@
 .header.expanded {
-  height: 250px;
+  height: 230px;
   
 }
 
@@ -13,7 +13,7 @@
   background-color: $dark-yellow-background;
   color: $header-font-color;
   font-family: $sans-font-family;
-  font-size: 0.8rem;
+  font-size: 12px;
   text-transform: uppercase;
   overflow: hidden;
   z-index: 10;
@@ -49,7 +49,7 @@
         padding: 8px;
         margin: 8px 0;
         text-align: center;
-        transition: all 0.4s ease;
+        transition: background-color 0.4s ease;
         border-radius: 5px;
 
         @media screen and (min-width: $screen-tablet) {
@@ -107,29 +107,3 @@
     transform: translateY(-8px)rotate(-45deg);
   }
 }
-
-// @media only screen and (min-width: 768px) {
-//   .header{
-
-//     .header-links {
-//       float: right;
-//       margin: 0 1.5rem;
-//     }
-
-//     .header-links {
-//       li {
-//         display: inline-block;
-//       }
-//       a {
-//         display: block;
-//         padding: 11px 12px;
-//         margin-top: 20px;
-//         border-radius: 4px;
-//         transition: background-color 0.5s ease;
-//       }
-//       a:hover {
-//         background-color: $light-yellow;
-//       }
-//     }
-//   }  
-// }
