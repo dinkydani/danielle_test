@@ -341,11 +341,10 @@ a, a:visited, a:hover, a:active {
   .testimonials-balls .testimonials-ball {
     width: 15px;
     height: 15px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    background-color: #d4dde0; }
     .testimonials-balls .testimonials-ball.active {
       background-color: #ffad00; }
-    .testimonials-balls .testimonials-ball.inactive {
-      background-color: #d4dde0; }
 
 .pricing-hero {
   background-image: url("/src/assets/pricing_images/header_pattern.png"), linear-gradient(#fee16c, #fcea96); }

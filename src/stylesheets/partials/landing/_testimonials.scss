@@ -75,12 +75,10 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    background-color: $testimonials-ball-color;
     
     &.active {
-      background-color: $testimonials-bullet-active;
-    }
-    &.inactive {
-      background-color: $testimonials-bullet-inactive;
+      background-color: $testimonials-ball-color-active;
     }
   }
 }
