@@ -127,7 +127,7 @@ a, a:visited, a:hover, a:active {
   text-transform: uppercase;
   overflow: hidden;
   z-index: 10;
-  transition: background-color, color 0.5s ease; }
+  transition: height 0.5s ease; }
   .header .logo {
     float: left;
     padding: 10px 0;
@@ -195,20 +195,14 @@ a, a:visited, a:hover, a:active {
   .footer .footer-top {
     padding: 2rem 0.5rem; }
   .footer .social-links {
-    list-style: none; }
+    list-style: none;
+    font-size: 1.2rem; }
     .footer .social-links .social-links-item {
       display: inline-block;
       padding: 2px; }
-    .footer .social-links .social-links-item a {
+    .footer .social-links a {
       display: block;
-      border-radius: 50%;
-      padding: 5px 4px;
-      margin: 0;
-      background: white;
-      height: 26px;
-      width: 26px; }
-    .footer .social-links i {
-      color: #1d4c5c; }
+      margin: 0; }
   .footer .left {
     float: left;
     width: 40%;

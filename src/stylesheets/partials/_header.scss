@@ -17,7 +17,7 @@
   text-transform: uppercase;
   overflow: hidden;
   z-index: 10;
-  transition: background-color, color 0.5s ease;
+  transition: height 0.5s ease;
 
   .logo {
     float: left;
@@ -41,7 +41,6 @@
       @media screen and (min-width: $screen-tablet) {
         width: auto;
         display: inline-block;
-        
       }
 
       a {

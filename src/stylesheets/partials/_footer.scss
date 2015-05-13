@@ -11,21 +11,16 @@
 
   .social-links {
     list-style: none;
+    font-size: 1.2rem;
+
     .social-links-item {
       display: inline-block;
       padding: 2px;
     }
-    .social-links-item a {
+
+    a {
       display: block;
-      border-radius: 50%;
-      padding: 5px 4px;
       margin: 0;
-      background: white;
-      height: 26px;
-      width: 26px;
-    }
-    i {
-      color: $dark-blue-background;
     }
   }
 
