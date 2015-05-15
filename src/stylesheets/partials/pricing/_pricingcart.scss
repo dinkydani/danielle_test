@@ -61,14 +61,15 @@
     float: right;
     font-size: 1rem;
     padding: 13px 0;
-    margin: 0 36px 0 0;
+    margin: 0 22px 0 0;
   }
 
   .pricing-cart-items {
     display: table;
-    margin: 14px auto;
+    margin: 10px auto;
     font-size: 0.8rem;
-    
+    padding-top: 10px;
+
     .row {
       display: table-row;
     }
@@ -81,6 +82,7 @@
         width: 50%;
       }
     }
+
     .pricing-cart-item-delete {
       color: $pricing-cart-delete-color;
       -webkit-user-select: none;
@@ -91,6 +93,15 @@
         cursor: pointer;
         color: $pricing-cart-delete-color-hover;
       }
+    }
+    .cell:nth-child(1) {
+      width: 60px;
+    }
+    .cell:nth-child(2) {
+      width: 120px;
+    }
+    .cell:nth-child(3) {
+      width: 60px;
     }
   }
 

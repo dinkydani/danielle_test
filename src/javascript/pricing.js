@@ -15,14 +15,23 @@ $(function(){
   var $pricingCartItems = $(".pricing-cart-items");
   var $pricingDescription = $(".pricing-description");
 
-  var selectedProducts = {};
+  var storedProducts = localStorage.getItem("Squarecat");
+  if (storedProducts) {
+    Squarecat.selectedProducts = JSON.parse(storedProducts);
+  } else {
+    Squarecat.selectedProducts = {};
+  }
 
+  var saveToLocalStorage = function () {
+    localStorage.setItem("Squarecat", JSON.stringify(Squarecat.selectedProducts));
+  }
 
   var initialise = function () {
     renderTemplates().then(function (data) {
 
       $pricingTable.html(productsTemplate(data));
-
+      // TODO: select cells too
+      renderCartItems();
       setupEventHandlers();
 
     });
@@ -40,10 +49,12 @@ $(function(){
 
     if( $(this).hasClass("selected") ){
       var productPrice = this.getAttribute("data-product-price");
-      selectedProducts[productName] = productPrice;
+      Squarecat.selectedProducts[productName] = productPrice;
+      saveToLocalStorage();
     }
     else {
-      delete selectedProducts[productName];
+      delete Squarecat.selectedProducts[productName];
+      saveToLocalStorage();
     }
     renderCartItems();
   };
@@ -52,13 +63,13 @@ $(function(){
     var productName = $(e.currentTarget).data("cartProductName");
     var $selectedCell = $("[data-product-name='" + productName + "'] .cell.selected");
     $selectedCell.toggleClass("selected");
-    delete selectedProducts[productName];
+    delete Squarecat.selectedProducts[productName];
     renderCartItems();
   };
 
   var renderCartItems = function () {
 
-    $pricingCartItems.html(cartTemplate(selectedProducts));
+    $pricingCartItems.html(cartTemplate(Squarecat.selectedProducts));
     $(".header-cart-amount").text("£" + calculateTotalPrice());
     
     var scrollTop = $(window).scrollTop();
@@ -68,7 +79,7 @@ $(function(){
 
   var calculateTotalPrice = function () {
     var total = 0;
-    $.each(selectedProducts, function (key, item){
+    $.each(Squarecat.selectedProducts, function (key, item){
       total += parseInt(item);
     });
     return total;

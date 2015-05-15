@@ -545,11 +545,12 @@ a, a:visited, a:hover, a:active {
     float: right;
     font-size: 1rem;
     padding: 13px 0;
-    margin: 0 36px 0 0; }
+    margin: 0 22px 0 0; }
   .pricing-cart .pricing-cart-items {
     display: table;
-    margin: 14px auto;
-    font-size: 0.8rem; }
+    margin: 10px auto;
+    font-size: 0.8rem;
+    padding-top: 10px; }
     .pricing-cart .pricing-cart-items .row {
       display: table-row; }
     .pricing-cart .pricing-cart-items .cell {
@@ -564,6 +565,12 @@ a, a:visited, a:hover, a:active {
       .pricing-cart .pricing-cart-items .pricing-cart-item-delete:hover, .pricing-cart .pricing-cart-items .pricing-cart-item-delete:focus, .pricing-cart .pricing-cart-items .pricing-cart-item-delete:active {
         cursor: pointer;
         color: #d7dcde; }
+    .pricing-cart .pricing-cart-items .cell:nth-child(1) {
+      width: 60px; }
+    .pricing-cart .pricing-cart-items .cell:nth-child(2) {
+      width: 120px; }
+    .pricing-cart .pricing-cart-items .cell:nth-child(3) {
+      width: 60px; }
   .pricing-cart .pricing-cart-button {
     text-align: center;
     padding: 16px 0; }
