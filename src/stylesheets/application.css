@@ -35,6 +35,17 @@ section {
   position: relative;
   margin: 0 auto; }
 
+.vertical-align {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.vertical-horizontal-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .dark-blue-background {
   background-color: #1d4c5c;
   color: #fff; }
@@ -191,9 +202,15 @@ a, a:visited, a:hover, a:active {
 .footer {
   text-align: center; }
   .footer p {
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
   .footer .footer-top {
-    padding: 2rem 0.5rem; }
+    height: 125px; }
+  .footer .footer-bottom {
+    height: 50px;
+    padding: 1rem 0; }
+  .footer .social, .footer .contact {
+    width: 100%; }
   .footer .social-links {
     list-style: none;
     font-size: 1.2rem; }
@@ -205,18 +222,18 @@ a, a:visited, a:hover, a:active {
       margin: 0; }
   .footer .left {
     float: left;
-    width: 40%;
-    padding: 4px 0; }
+    width: 40%; }
   .footer .middle {
     display: inline-block;
     position: relative; }
-    .footer .middle .footer-logo {
-      height: 54px; }
   .footer .right {
     float: right;
     width: 40%; }
-  .footer .footer-bottom {
-    padding: 1rem 0; }
+  .footer .footer-column {
+    height: 100%;
+    position: relative; }
+  .footer .footer-logo {
+    height: 54px; }
 
 .hero {
   background-image: url("/src/assets/landing_images/header_illustration.png"), linear-gradient(#fee16c, #fcea96);
