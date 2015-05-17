@@ -4,7 +4,7 @@ $(function(){
 
   "use strict";
 
-  var productsTemplate = Squarecat.templates["src/templates/pricing-products.hbs"];
+  var productsTemplate = Squarecat.templates["src/templates/pricing-table.hbs"];
   var cartTemplate = Squarecat.templates["src/templates/pricing-cart.hbs"];
 
   var $pricingTable = $(".pricing-table");
@@ -22,6 +22,12 @@ $(function(){
     Squarecat.selectedProducts = {};
   }
 
+  var renderSelectedCells = function () {
+    $.each(Squarecat.selectedProducts, function (key, item){
+      $("[data-product-name='" + key + "'] [data-product-price='" + item + "'].cell.selectable").addClass("selected");
+    });
+  }
+
   var saveToLocalStorage = function () {
     localStorage.setItem("Squarecat", JSON.stringify(Squarecat.selectedProducts));
   }
@@ -32,6 +38,7 @@ $(function(){
       $pricingTable.html(productsTemplate(data));
       // TODO: select cells too
       renderCartItems();
+      renderSelectedCells();
       setupEventHandlers();
 
     });
@@ -64,6 +71,7 @@ $(function(){
     var $selectedCell = $("[data-product-name='" + productName + "'] .cell.selected");
     $selectedCell.toggleClass("selected");
     delete Squarecat.selectedProducts[productName];
+    saveToLocalStorage();
     renderCartItems();
   };
 

@@ -540,23 +540,23 @@ a, a:visited, a:hover, a:active {
     float: left;
     font-size: 1.4rem;
     padding: 13px 0;
-    margin: 0 0 0 25px; }
+    margin: 0 0 0 20px; }
   .pricing-cart .header-cart-text {
     float: right;
     font-size: 1rem;
     padding: 13px 0;
-    margin: 0 22px 0 0; }
+    margin: 0 20px 0 0; }
   .pricing-cart .pricing-cart-items {
     display: table;
-    margin: 10px auto;
+    margin: 0 auto;
     font-size: 0.8rem;
-    padding-top: 10px; }
+    padding: 18px; }
     .pricing-cart .pricing-cart-items .row {
       display: table-row; }
     .pricing-cart .pricing-cart-items .cell {
       display: table-cell;
       vertical-align: middle;
-      padding: 4px 12px; }
+      padding: 4px 0; }
       .pricing-cart .pricing-cart-items .cell .pricing-cart-product-name {
         width: 50%; }
     .pricing-cart .pricing-cart-items .pricing-cart-item-delete {
@@ -566,15 +566,18 @@ a, a:visited, a:hover, a:active {
         cursor: pointer;
         color: #d7dcde; }
     .pricing-cart .pricing-cart-items .cell:nth-child(1) {
-      width: 60px; }
+      width: 25px; }
     .pricing-cart .pricing-cart-items .cell:nth-child(2) {
-      width: 120px; }
+      width: 155px;
+      padding: 0 10px; }
     .pricing-cart .pricing-cart-items .cell:nth-child(3) {
-      width: 60px; }
+      width: 60px;
+      text-align: right; }
   .pricing-cart .pricing-cart-button {
     text-align: center;
     padding: 16px 0; }
     .pricing-cart .pricing-cart-button .btn {
-      margin: 0; }
+      margin: 0;
+      width: 220px; }
 
 /*# sourceMappingURL=application.css.map */

@@ -55,20 +55,20 @@
     float: left;
     font-size: 1.4rem;
     padding: 13px 0;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 20px;
   }
   .header-cart-text {
     float: right;
     font-size: 1rem;
     padding: 13px 0;
-    margin: 0 22px 0 0;
+    margin: 0 20px 0 0;
   }
 
   .pricing-cart-items {
     display: table;
-    margin: 10px auto;
+    margin: 0 auto;
     font-size: 0.8rem;
-    padding-top: 10px;
+    padding: 18px;
 
     .row {
       display: table-row;
@@ -76,7 +76,7 @@
     .cell {
       display: table-cell;
       vertical-align: middle;
-      padding: 4px 12px;
+      padding: 4px 0;
 
       .pricing-cart-product-name {
         width: 50%;
@@ -95,13 +95,15 @@
       }
     }
     .cell:nth-child(1) {
-      width: 60px;
+      width: 25px;
     }
     .cell:nth-child(2) {
-      width: 120px;
+      width: 155px;
+      padding: 0 10px;
     }
     .cell:nth-child(3) {
       width: 60px;
+      text-align: right;
     }
   }
 
@@ -110,6 +112,7 @@
     padding: 16px 0;
       .btn {
         margin: 0;
+        width: 220px;
       }
   }
 
