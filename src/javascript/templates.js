@@ -2,25 +2,19 @@ this["Squarecat"] = this["Squarecat"] || {};
 this["Squarecat"]["templates"] = this["Squarecat"]["templates"] || {};
 
 this["Squarecat"]["templates"]["src/templates/pricing-cart.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers.each.call(depth0,depth0,{"name":"each","hash":{},"fn":this.program(2, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
-},"2":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "    <div class=\"row\">\n      <span class=\"cell\"><i class=\"pricing-cart-item-delete fa fa-times-circle fa-2x\"data-cart-product-name="
+  return "  <div class=\"row\">\n    <span class=\"cell\"><i class=\"pricing-cart-item-delete fa fa-times-circle fa-2x\"data-cart-product-name="
     + alias3(((helper = (helper = helpers.key || (data && data.key)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"key","hash":{},"data":data}) : helper)))
-    + "></i></span>\n      <span class=\"cell pricing-cart-product-name\">"
+    + "></i></span>\n    <span class=\"cell pricing-cart-product-name\">"
     + alias3(((helper = (helper = helpers.key || (data && data.key)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"key","hash":{},"data":data}) : helper)))
-    + "</span>\n      <span class=\"cell\">£"
+    + "</span>\n    <span class=\"cell\">£"
     + alias3(this.lambda(depth0, depth0))
-    + "</span>\n    </div>\n";
-},"4":function(depth0,helpers,partials,data) {
-    return "  <div class=\"row\">\n    <span>Choose some products! :)</span>\n  </div>\n";
+    + "</span>\n  </div>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.length : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.program(4, data, 0),"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0,depth0,{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
 
 this["Squarecat"]["templates"]["src/templates/pricing-table.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {

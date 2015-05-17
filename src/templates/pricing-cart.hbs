@@ -1,13 +1,7 @@
-{{#if this.length}}
-  {{#each this}}
-    <div class="row">
-      <span class="cell"><i class="pricing-cart-item-delete fa fa-times-circle fa-2x"data-cart-product-name={{@key}}></i></span>
-      <span class="cell pricing-cart-product-name">{{@key}}</span>
-      <span class="cell">£{{this}}</span>
-    </div>
-  {{/each}}
-{{else}}
+{{#each this}}
   <div class="row">
-    <span>Choose some products! :)</span>
+    <span class="cell"><i class="pricing-cart-item-delete fa fa-times-circle fa-2x"data-cart-product-name={{@key}}></i></span>
+    <span class="cell pricing-cart-product-name">{{@key}}</span>
+    <span class="cell">£{{this}}</span>
   </div>
-{{/if}}
+{{/each}}
