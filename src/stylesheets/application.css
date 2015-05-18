@@ -235,17 +235,30 @@ a, a:visited, a:hover, a:active {
   .footer .footer-logo {
     height: 54px; }
 
+.hero-gradient {
+  background: linear-gradient(#fee16c, #fcea96);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+
 .hero {
-  background-image: url("/src/assets/landing_images/header_illustration.png"), linear-gradient(#fee16c, #fcea96);
+  padding: 0;
+  background-image: url("/src/assets/landing_images/header_illustration.png");
   background-repeat: no-repeat;
   background-position: bottom center;
+  border-bottom: 1.5rem solid #1d4c5c;
+  background-size: 520px;
   height: calc(100vh - 60px);
-  border-bottom: 1.5rem solid #1d4c5c; }
+  z-index: 1; }
   .hero .hero-text {
     text-align: center;
     color: #fff;
     font-size: 1.5rem;
-    padding: 0 3rem; }
+    margin: 0 1rem;
+    padding: 3rem 0 0 0; }
 
 .business-description {
   text-align: center; }
