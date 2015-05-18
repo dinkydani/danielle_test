@@ -46,6 +46,12 @@ module.exports = function(grunt) {
         jshintrc: ".jshintrc"
       },
       all: ["Gruntfile.js", "src/javascript/**/*.js", "!src/javascript/templates.js"]
+    },
+
+    autoprefixer: {
+      no_dest: {
+        src: "src/stylesheets/application.css"
+      }
     }
 
   });
@@ -55,8 +61,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-sass");
   grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-autoprefixer");
 
   // Default task(s).
-  grunt.registerTask("default", ["jshint", "sass", "handlebars", "watch"]);
+  grunt.registerTask("default", ["jshint", "sass", "autoprefixer", "handlebars", "watch"]);
 
 };
