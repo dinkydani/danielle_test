@@ -26,11 +26,11 @@ $(function(){
     $.each(Squarecat.selectedProducts, function (key, item){
       $("[data-product-name='" + key + "'] [data-product-price='" + item + "'].cell.selectable").addClass("selected");
     });
-  }
+  };
 
   var saveToLocalStorage = function () {
     localStorage.setItem("Squarecat", JSON.stringify(Squarecat.selectedProducts));
-  }
+  };
 
   var initialise = function () {
     renderTemplates().then(function (data) {
