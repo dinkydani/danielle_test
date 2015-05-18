@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ["src/stylesheets/**/*.scss"],
-        tasks: ["sass"]
+        tasks: ["sass", "autoprefixer"]
       },
       handlebars: {
         files: ["src/templates/**/*.hbs"],
