@@ -2,20 +2,30 @@ html{
   font-size: 16px;
   min-width: 320px;
   font-family: $base-font-family;
+  @media screen and (min-width: $screen-tablet) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: $screen-desktop) {
+    font-size: 18px;
+  }
 }
+
 h1 {
   font-size: 1.2rem;
   padding: 0 1.5rem;
 }
+
 h2 {
   font-size: 1rem;
   padding: 0 1.5rem;
 }
+
 p {
   font-size: 0.7rem;
   line-height: 20px;
   padding: 0 1.5rem;
 }
+
 section {
   padding: 3rem 0;
 }
@@ -27,6 +37,14 @@ section {
 .wrap {
   position: relative;
   margin: 0 auto;
+  max-width: 1080px;
+  @media screen and (min-width: $screen-tablet) {
+    width: 80%;
+  }
+  @media screen and (min-width: $screen-desktop) {
+    width: 70%;
+  }
+
 }
 .vertical-align {
   position: absolute;
@@ -54,21 +72,4 @@ section {
 .light-grey-background {
   background-color: $light-grey-background;
   color: $testimonials-font-color;
-}
-
-@media screen and (min-width: $screen-tablet) {
-  html {
-    font-size: 16px;
-  }
-  .wrap {
-    width: 80%;
-  }
-}
-@media screen and (min-width: $screen-desktop) {
-  html {
-    font-size: 18px;
-  }
-  .wrap {
-    width: 70%;
-  }
 }

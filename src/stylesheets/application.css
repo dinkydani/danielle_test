@@ -11,6 +11,12 @@ html {
   font-size: 16px;
   min-width: 320px;
   font-family: "Merriweather", serif; }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 16px; } }
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 18px; } }
 
 h1 {
   font-size: 1.2rem;
@@ -33,7 +39,14 @@ section {
 
 .wrap {
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1080px; }
+  @media screen and (min-width: 768px) {
+    .wrap {
+      width: 80%; } }
+  @media screen and (min-width: 1024px) {
+    .wrap {
+      width: 70%; } }
 
 .vertical-align {
   position: absolute;
@@ -66,18 +79,6 @@ section {
   background-color: #eff2f3;
   color: #6c8792; }
 
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 16px; }
-
-  .wrap {
-    width: 80%; } }
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 18px; }
-
-  .wrap {
-    width: 70%; } }
 html,
 body,
 ul,
@@ -267,7 +268,12 @@ a, a:visited, a:hover, a:active {
   border-bottom: 1.5rem solid #1d4c5c;
   background-size: 520px;
   height: calc(100vh - 60px);
+  min-height: 480px;
   z-index: 1; }
+  @media screen and (min-width: 600px) {
+    .hero {
+      background-size: 700px;
+      min-height: 550px; } }
   .hero .hero-text {
     text-align: center;
     color: #fff;
@@ -351,8 +357,7 @@ a, a:visited, a:hover, a:active {
     position: relative;
     margin: auto;
     padding: 0 1.5rem;
-    max-width: 400px;
-    overflow: hidden; }
+    max-width: 400px; }
     .testimonials .testimonials-images .img-desktop {
       position: relative;
       width: 85%;

@@ -14,11 +14,16 @@ $header_illustration: url("/src/assets/landing_images/header_illustration.png");
   background-image: $header_illustration; 
   background-repeat: no-repeat;
   background-position: bottom center;
-  // height: calc(100vh - 60px);
   border-bottom: 1.5rem solid $dark-blue-background;
   background-size: 520px;
   height: calc(100vh - 60px);
+  min-height: 480px;
   z-index: 1;
+
+  @media screen and (min-width: 600px) {
+    background-size: 700px;
+    min-height: 550px;
+  }
 
 
   .hero-text{
