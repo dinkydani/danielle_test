@@ -361,7 +361,7 @@ a, a:visited, a:hover, a:active {
         top: 48px;
         left: -50px;
         width: 60px; } }
-  .testimonials .testimonials-images {
+  .testimonials .testimonials-image-templates {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -369,17 +369,17 @@ a, a:visited, a:hover, a:active {
     margin: auto;
     padding: 0 1.5rem;
     max-width: 400px; }
-    .testimonials .testimonials-images .img-desktop {
+    .testimonials .testimonials-image-templates .img-desktop-template {
       position: relative;
       width: 85%;
       top: 5px; }
-    .testimonials .testimonials-images .img-mobile {
+    .testimonials .testimonials-image-templates .img-mobile-template {
       position: absolute;
       right: -26px;
       bottom: -1px;
       width: 60%; }
     @media screen and (min-width: 768px) {
-      .testimonials .testimonials-images {
+      .testimonials .testimonials-image-templates {
         position: relative;
         float: right;
         width: 40%;

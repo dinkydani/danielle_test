@@ -42,7 +42,7 @@
     }
   }
 
-  .testimonials-images {
+  .testimonials-image-templates {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -51,12 +51,12 @@
     padding: 0 1.5rem;
     max-width: 400px;
 
-    .img-desktop {
+    .img-desktop-template {
       position: relative;
       width: 85%;
       top: 5px;
     }
-    .img-mobile {
+    .img-mobile-template {
       position: absolute;
       right: -26px;
       bottom: -1px;
