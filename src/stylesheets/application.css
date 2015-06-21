@@ -338,11 +338,16 @@ a, a:visited, a:hover, a:active {
     text-align: right;
     font-weight: bold; }
   .testimonials .testimonials-content {
-    position: relative; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
     @media screen and (min-width: 768px) {
       .testimonials .testimonials-content {
+        position: relative;
         float: left;
-        width: 50%;
+        width: 40%;
+        margin-left: 10%;
         padding-right: 1rem; } }
   .testimonials .testimonials-quotation-img {
     display: none; }
@@ -354,7 +359,10 @@ a, a:visited, a:hover, a:active {
         left: -50px;
         width: 60px; } }
   .testimonials .testimonials-images {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     padding: 0 1.5rem;
     max-width: 400px; }
@@ -369,26 +377,38 @@ a, a:visited, a:hover, a:active {
       width: 60%; }
     @media screen and (min-width: 768px) {
       .testimonials .testimonials-images {
+        position: relative;
         float: right;
-        width: 50%;
+        width: 40%;
+        margin-right: 10%;
         padding: 0; } }
 
-.testimonials-balls {
+.testimonials-carousel .owl-controls {
+  background-color: #eff2f3;
+  color: #6c8792;
   height: 90px;
   border-top: 2px #d4dde0 solid;
   text-align: center; }
-  .testimonials-balls ul {
-    margin-top: 1rem; }
-  .testimonials-balls li {
-    display: inline-block;
-    padding: 0.4rem; }
-  .testimonials-balls .testimonials-ball {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #d4dde0; }
-    .testimonials-balls .testimonials-ball.active {
-      background-color: #ffad00; }
+.testimonials-carousel .owl-pagination {
+  margin-top: 1rem; }
+.testimonials-carousel .owl-controls {
+  margin-top: 0; }
+.testimonials-carousel .owl-controls .owl-page span {
+  background: #d4dde0;
+  width: 15px;
+  height: 15px; }
+.testimonials-carousel .owl-controls .owl-page.active span {
+  background: #ffad00; }
+.testimonials-carousel .owl-slide {
+  height: 480px;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .testimonials-carousel .owl-slide {
+      height: auto; } }
+
+.testimonials .wrap {
+  width: 100%;
+  max-width: none; }
 
 .pricing-hero {
   background-image: url("/src/assets/pricing_images/header_pattern.png"), -webkit-linear-gradient(#fee16c, #fcea96);
