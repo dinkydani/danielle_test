@@ -2,6 +2,11 @@
 
   padding-bottom: 0;
 
+  .wrap {
+    width: 100%;
+    max-width: none;
+  }
+
   .testimonials-company {
     color: #61a6bd;
     font-size: 0.8rem;
@@ -69,6 +74,7 @@
 }
 
 .testimonials-carousel {
+  
   .owl-controls {
     background-color: rgb(239, 242, 243);
     color: rgb(108, 135, 146);
@@ -76,20 +82,25 @@
     border-top: 2px rgb(212, 221, 224) solid;
     text-align: center;
   }
+
   .owl-pagination {
     margin-top: 1rem;
   }
+
   .owl-controls {
     margin-top: 0;
   }
+
   .owl-controls .owl-page span {
     background: $testimonials-ball-color;
     width: 15px;
     height: 15px;
   }
+
   .owl-controls .owl-page.active span {
     background: $testimonials-ball-color-active;
   }
+
   .owl-slide {
     height: 480px;
     position: relative;
@@ -99,11 +110,3 @@
     }
   }
 }
-
-.testimonials .wrap {
-  width: 100%;
-  max-width: none;
-}
-
-
-

@@ -331,6 +331,9 @@ a, a:visited, a:hover, a:active {
 
 .testimonials {
   padding-bottom: 0; }
+  .testimonials .wrap {
+    width: 100%;
+    max-width: none; }
   .testimonials .testimonials-company {
     color: #61a6bd;
     font-size: 0.8rem; }
@@ -405,10 +408,6 @@ a, a:visited, a:hover, a:active {
   @media screen and (min-width: 768px) {
     .testimonials-carousel .owl-slide {
       height: auto; } }
-
-.testimonials .wrap {
-  width: 100%;
-  max-width: none; }
 
 .pricing-hero {
   background-image: url("/src/assets/pricing_images/header_pattern.png"), -webkit-linear-gradient(#fee16c, #fcea96);
