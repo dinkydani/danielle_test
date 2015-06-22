@@ -1,0 +1,25 @@
+{
+  "testimonials": [
+    {
+      "company": "b13.technology",
+      "testimonial": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia consequatur qui, atque, delectus, corrupti laboriosam distinctio doloribus facere quis possimus itaque ducimus accusantium suscipit, unde magnam aliquam soluta id.",
+      "author": "Tom Haworth, CEO",
+      "image-mobile": "b13-mobile.png",
+      "image-desktop": "b13-desktop.png"
+    },
+    {
+      "company": "dinkydani.github.io",
+      "testimonial": "Dinkydani dinkydani dinkydani Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia ossimus itaque ducimus accusantium suscipit, unde magnam aliquam soluta id.",
+      "author": "Danielle Johnson, Director",
+      "image-mobile": "dinkydani-mobile.png",
+      "image-desktop": "dinkydani-desktop.png"
+    },
+    {
+      "company": "test.github.io",
+      "testimonial": "test test test Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia ossimus itaque ducimus accusantium suscipit, unde magnam aliquam soluta id.",
+      "author": "Danielle Johnson, Director",
+      "image-mobile": "test-mobile.png",
+      "image-desktop": "test-desktop.png"
+    }
+  ]
+}
