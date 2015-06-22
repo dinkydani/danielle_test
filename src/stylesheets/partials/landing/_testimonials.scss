@@ -49,27 +49,35 @@
     right: 0;
     margin: auto;
     padding: 0 1.5rem;
-    max-width: 400px;
-
-    .img-desktop-template {
-      position: relative;
-      width: 85%;
-      top: 5px;
-    }
-    .img-mobile-template {
-      position: absolute;
-      right: -26px;
-      bottom: -1px;
-      width: 60%;
-    }
+    
+    width: 320px;
 
     @media screen and (min-width: $screen-tablet) {
       position: relative;
       float: right;
-      width: 40%;
-      margin-right: 10%;
+      margin-right: 3rem;
       padding: 0;
     }
+
+    .img-desktop-template {
+      position: relative;
+      width: 232px;
+      top: 5px;
+      @media screen and (min-width: $screen-tablet) {
+        width: 275px;
+      }
+    }
+    .img-mobile-template {
+      position: absolute;
+      width: 192px;
+      right: -26px;
+      bottom: -1px;
+      @media screen and (min-width: $screen-tablet) {
+        width: 195px;
+        right: -50px;
+      }
+    }
+
   }
 }
 
@@ -102,11 +110,15 @@
   }
 
   .owl-slide {
-    height: 480px;
     position: relative;
+    height: 480px;
     
     @media screen and (min-width: $screen-tablet) {
       height: auto;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }

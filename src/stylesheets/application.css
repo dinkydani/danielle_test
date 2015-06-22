@@ -368,23 +368,29 @@ a, a:visited, a:hover, a:active {
     right: 0;
     margin: auto;
     padding: 0 1.5rem;
-    max-width: 400px; }
-    .testimonials .testimonials-image-templates .img-desktop-template {
-      position: relative;
-      width: 85%;
-      top: 5px; }
-    .testimonials .testimonials-image-templates .img-mobile-template {
-      position: absolute;
-      right: -26px;
-      bottom: -1px;
-      width: 60%; }
+    width: 320px; }
     @media screen and (min-width: 768px) {
       .testimonials .testimonials-image-templates {
         position: relative;
         float: right;
-        width: 40%;
-        margin-right: 10%;
+        margin-right: 3rem;
         padding: 0; } }
+    .testimonials .testimonials-image-templates .img-desktop-template {
+      position: relative;
+      width: 232px;
+      top: 5px; }
+      @media screen and (min-width: 768px) {
+        .testimonials .testimonials-image-templates .img-desktop-template {
+          width: 275px; } }
+    .testimonials .testimonials-image-templates .img-mobile-template {
+      position: absolute;
+      width: 192px;
+      right: -26px;
+      bottom: -1px; }
+      @media screen and (min-width: 768px) {
+        .testimonials .testimonials-image-templates .img-mobile-template {
+          width: 195px;
+          right: -50px; } }
 
 .testimonials-carousel .owl-controls {
   background-color: #eff2f3;
@@ -403,11 +409,15 @@ a, a:visited, a:hover, a:active {
 .testimonials-carousel .owl-controls .owl-page.active span {
   background: #ffad00; }
 .testimonials-carousel .owl-slide {
-  height: 480px;
-  position: relative; }
+  position: relative;
+  height: 480px; }
   @media screen and (min-width: 768px) {
     .testimonials-carousel .owl-slide {
       height: auto; } }
+  @media screen and (min-width: 1024px) {
+    .testimonials-carousel .owl-slide {
+      width: 90%;
+      margin: 0 auto; } }
 
 .pricing-hero {
   background-image: url("/src/assets/pricing_images/header_pattern.png"), -webkit-linear-gradient(#fee16c, #fcea96);
