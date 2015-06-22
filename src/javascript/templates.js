@@ -47,3 +47,23 @@ this["Squarecat"]["templates"]["src/templates/pricing-table.hbs"] = Handlebars.t
   return "<div class=\"row table-header\">\n  <span class=\"cell cell-header\">Item</span>\n  <span class=\"cell cell-header\">Description</span>\n  <span class=\"cell cell-header\">BASIC</span>\n  <span class=\"cell cell-header\">PRO</span>\n  <span class=\"cell cell-header\">ULT</span>\n</div>\n\n"
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.products : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
 },"useData":true});
+
+this["Squarecat"]["templates"]["src/templates/testimonials.hbs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
+    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+
+  return "  <div class=\"owl-slide\">\n    <div class=\"testimonials-content\">\n      <img class=\"testimonials-quotation-img\" src=\"assets/landing_images/testimonial_quotation.png\" alt=\"\">\n      <h2>Testimonials</h2>\n      <p class=\"testimonials-company\">"
+    + alias3(((helper = (helper = helpers.company || (depth0 != null ? depth0.company : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"company","hash":{},"data":data}) : helper)))
+    + "</p>\n      <p>\""
+    + alias3(((helper = (helper = helpers.testimonial || (depth0 != null ? depth0.testimonial : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"testimonial","hash":{},"data":data}) : helper)))
+    + "\"</p>\n      <p class=\"testimonials-author\">"
+    + alias3(((helper = (helper = helpers.author || (depth0 != null ? depth0.author : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"author","hash":{},"data":data}) : helper)))
+    + "</p>\n    </div>\n    <div class=\"testimonials-image-templates\">\n      <img class=\"img-desktop-template\" src=\"assets/landing_images/testimonials_template_desktop.png\" alt=\"\">\n      <img class=\"img-desktop\" src=\"assets/testimonials_images/"
+    + alias3(((helper = (helper = helpers['image-desktop'] || (depth0 != null ? depth0['image-desktop'] : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"image-desktop","hash":{},"data":data}) : helper)))
+    + "\" alt=\"\">\n      \n      <img class=\"img-mobile-template\" src=\"assets/landing_images/testimonials_template_mobile.png\" alt=\"\">\n      <img class=\"img-mobile\" src=\"assets/testimonials_images/"
+    + alias3(((helper = (helper = helpers['image-mobile'] || (depth0 != null ? depth0['image-mobile'] : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"image-mobile","hash":{},"data":data}) : helper)))
+    + "\" alt=\"\">\n    </div>\n  </div>\n";
+},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.testimonials : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+},"useData":true});
