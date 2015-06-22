@@ -2,7 +2,6 @@ module.exports = function(grunt) {
 
   "use strict";
 
-  // Project configuration.
   grunt.initConfig({
     sass: {
       dist: {
@@ -56,14 +55,12 @@ module.exports = function(grunt) {
 
   });
 
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks("grunt-contrib-handlebars");
   grunt.loadNpmTasks("grunt-contrib-sass");
   grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-autoprefixer");
 
-  // Default task(s).
   grunt.registerTask("default", ["jshint", "sass", "autoprefixer", "handlebars", "watch"]);
 
 };
