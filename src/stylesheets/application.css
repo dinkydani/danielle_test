@@ -391,6 +391,26 @@ a, a:visited, a:hover, a:active {
         .testimonials .testimonials-image-templates .img-mobile-template {
           width: 195px;
           right: -50px; } }
+  .testimonials .img-desktop {
+    position: absolute;
+    width: 232px;
+    top: 22px;
+    left: 24px; }
+    @media screen and (min-width: 768px) {
+      .testimonials .img-desktop {
+        width: 275px;
+        top: 26px;
+        left: 0; } }
+  .testimonials .img-mobile {
+    position: absolute;
+    width: 90px;
+    top: 67px;
+    right: 25px; }
+    @media screen and (min-width: 768px) {
+      .testimonials .img-mobile {
+        width: 91px;
+        top: 104px;
+        right: 2px; } }
 
 .testimonials-carousel .owl-controls {
   background-color: #eff2f3;
@@ -403,10 +423,12 @@ a, a:visited, a:hover, a:active {
 .testimonials-carousel .owl-controls {
   margin-top: 0; }
 .testimonials-carousel .owl-controls .owl-page span {
+  cursor: pointer;
   background: #d4dde0;
   width: 15px;
   height: 15px; }
 .testimonials-carousel .owl-controls .owl-page.active span {
+  cursor: pointer;
   background: #ffad00; }
 .testimonials-carousel .owl-slide {
   position: relative;

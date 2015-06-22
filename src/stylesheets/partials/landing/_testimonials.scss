@@ -58,7 +58,7 @@
       margin-right: 3rem;
       padding: 0;
     }
-
+    
     .img-desktop-template {
       position: relative;
       width: 232px;
@@ -77,7 +77,30 @@
         right: -50px;
       }
     }
+  }
 
+  .img-desktop {
+    position: absolute;
+    width: 232px;
+    top: 22px;
+    left: 24px;
+    @media screen and (min-width: $screen-tablet) {
+      width: 275px;
+      top: 26px;
+      left: 0;
+    }
+  }
+  .img-mobile {
+    position: absolute;
+    width: 90px;
+    top: 67px;
+    right: 25px;
+    
+    @media screen and (min-width: $screen-tablet) {
+      width: 91px;
+      top: 104px;
+      right: 2px;
+    }
   }
 }
 
@@ -100,12 +123,14 @@
   }
 
   .owl-controls .owl-page span {
+    cursor: pointer;
     background: $testimonials-ball-color;
     width: 15px;
     height: 15px;
   }
 
   .owl-controls .owl-page.active span {
+    cursor: pointer;
     background: $testimonials-ball-color-active;
   }
 
