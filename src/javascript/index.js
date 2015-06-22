@@ -9,7 +9,6 @@ $(function () {
 
   var initialise = function () {
     getTestimonials().then(function (data) {
-      console.log(data);
 
       $testimonialsCarousel.html(testimonialsTemplate(data));
       initCarousel();
