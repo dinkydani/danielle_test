@@ -23,7 +23,7 @@ $(function () {
   var initCarousel = function () {
     $testimonialsCarousel.owlCarousel({
       
-      // autoPlay: true,
+      autoPlay: true,
       slideSpeed : 300,
       paginationSpeed : 500,
       rewindSpeed: 300,
