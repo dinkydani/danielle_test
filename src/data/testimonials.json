@@ -1,5 +1,3 @@
-// Testimonials may be up to 250 characters in length
-
 {
   "testimonials": [
     {
@@ -17,9 +15,9 @@
       "image-desktop": "dinkydani-desktop.png"
     },
     {
-      "company": "test.github.io",
+      "company": "Test Company",
       "testimonial": "test test test Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia ossimus itaque ducimus accusantium suscipit, unde magnam aliquam soluta id.",
-      "author": "Danielle Johnson, Director",
+      "author": "Test, Tester",
       "image-mobile": "test-mobile.png",
       "image-desktop": "test-desktop.png"
     }
