@@ -1,4 +1,4 @@
-$header_pattern: url("/src/assets/pricing_images/header_pattern.png");
+$header_pattern: url("../assets/pricing_images/header_pattern.png");
 
 .pricing-hero {
   background-image: $header_pattern, linear-gradient($dark-yellow-background, $light-yellow-background); 

@@ -1,5 +1,3 @@
-$header_illustration: url("/src/assets/landing_images/header_illustration.png");
-
 .hero-gradient {
   background: linear-gradient($dark-yellow-background, $light-yellow-background);
   position: absolute;
@@ -11,7 +9,7 @@ $header_illustration: url("/src/assets/landing_images/header_illustration.png");
 }
 .hero {
   padding: 0;
-  background-image: $header_illustration; 
+  background-image: url("../assets/landing_images/header_illustration.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   border-bottom: 1.5rem solid $dark-blue-background;

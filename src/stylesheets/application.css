@@ -262,7 +262,7 @@ a, a:visited, a:hover, a:active {
 
 .hero {
   padding: 0;
-  background-image: url("/src/assets/landing_images/header_illustration.png");
+  background-image: url("../assets/landing_images/header_illustration.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   border-bottom: 1.5rem solid #1d4c5c;
@@ -297,7 +297,7 @@ a, a:visited, a:hover, a:active {
 
 .landing-pricing-description {
   position: relative;
-  background-image: url("/src/assets/landing_images/pricing_illustration.png");
+  background-image: url("../assets/landing_images/pricing_illustration.png");
   background-position: center -120px;
   background-repeat: no-repeat;
   background-size: 700px; }
@@ -314,7 +314,7 @@ a, a:visited, a:hover, a:active {
 
 .benefits-description {
   position: relative;
-  background-image: url("/src/assets/landing_images/benefits_illustration.png");
+  background-image: url("../assets/landing_images/benefits_illustration.png");
   background-position: center 25px;
   background-repeat: no-repeat;
   background-size: 450px; }
@@ -442,8 +442,8 @@ a, a:visited, a:hover, a:active {
       margin: 0 auto; } }
 
 .pricing-hero {
-  background-image: url("/src/assets/pricing_images/header_pattern.png"), -webkit-linear-gradient(#fee16c, #fcea96);
-  background-image: url("/src/assets/pricing_images/header_pattern.png"), linear-gradient(#fee16c, #fcea96); }
+  background-image: url("../assets/pricing_images/header_pattern.png"), -webkit-linear-gradient(#fee16c, #fcea96);
+  background-image: url("../assets/pricing_images/header_pattern.png"), linear-gradient(#fee16c, #fcea96); }
   .pricing-hero .pricing-hero-text {
     text-align: center;
     color: #fff;
@@ -483,7 +483,7 @@ a, a:visited, a:hover, a:active {
 
 .pricing-description {
   position: relative;
-  background-image: url("/src/assets/pricing_images/pricing_illustration2.png");
+  background-image: url("../assets/pricing_images/pricing_illustration2.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 460px;
